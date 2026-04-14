@@ -15,7 +15,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 ## 🗺️ Roadmap
 
 ### Phase 1 — C++ Foundations *(starting here)*
-- [ ] Setting up a C++ development environment
+- [X] Setting up a C++ development environment
 - [ ] Variables, data types, and control flow
 - [ ] Functions and basic OOP (classes & objects)
 - [ ] Compiling and running my first program
