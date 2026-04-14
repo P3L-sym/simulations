@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main() {
     std::string intro = "Hello!!!!!";
@@ -7,7 +8,7 @@ int main() {
     
     double p = 15;
     double n = 5;
-    double i = 7;
+    double i = 0.07;
     double A1 = p * (1 + n * i);
     double A2 = p * (1 - n * i);
 
