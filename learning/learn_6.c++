@@ -20,13 +20,14 @@ int main() {
     std::cout << "======================================================================" << '\n';
 
     if (age >= 21 && age <= 80){
-        std::cout << "Thank You for signing up" << '\n';
+        std::cout << "Thank You " << name << " for signing up" << '\n';
         std::cout << "Welcome to the Space Program" << '\n';
-    } else if (age <= 21){
-        std::cout << "Sorry you are too Young" << '\n';
+    } else if (age < 21){
+        std::cout << "Sorry " << name << " you are too Young" << '\n';
         std::cout << "Please come back in " << a << " years!" << '\n';
     } else {
-        std::cout << "Sorry you are too Old" << '\n';
+        std::cout << "Sorry " << name << " you are too Old" << '\n';
+        std::cout << "But Earth still needs You here" << '\n';
     }
 
     std::cout << "======================================================================" << '\n';
