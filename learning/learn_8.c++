@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+    char an;
     bool thought;
     int grade;
     double f;
@@ -9,11 +10,23 @@ int main() {
     std::cout << "======================================================================" << '\n';
 
     std::cout << "Do you thin you passed (y/n): ";
-    std::cin >> thought;
+    std::cin >> an;
 
-    if (thought == "y") {
+    // switch(an) {
+    //     case 'y':
+    //         thought = true;
+    //         break;
+    //     case 'n':
+    //         thought = false;
+    //         break;
+    //     default:
+    //         std::cout << "Please enter a valid letter" << '\n';
+    //         break;
+    // }
+
+    if(an == 'y') {
         thought = true;
-    } else {
+    } else if(an == 'n') {
         thought = false;
     }
 
@@ -24,7 +37,8 @@ int main() {
 
     std::cout << "======================================================================" << '\n';
 
-    thought ? std::cout << "You think you passed" << '\n' : std::cout << "You think you failed" << '\n';
+    // thought ? std::cout << "You think you passed" << '\n' : std::cout << "You think you failed" << '\n';
+    std::cout << (thought ? "You think you passed" : "You think you failed") << '\n';
 
     std::cout << "======================================================================" << '\n';
 
@@ -35,7 +49,7 @@ int main() {
 
     std::cout << "======================================================================" << '\n';
 
-    grade >= 60 ? std::cout << "You pass" << '\n' << "You passed with " << p << "%" << '\n' : std::cout << "You failed" << '\n' << "You needed " << f << "% to pass" << '\n';
+    grade >= 60 ? std::cout << "You passed" << '\n' << "You passed with " << p << "%" << '\n' : std::cout << "You failed" << '\n' << "You needed " << f << "% to pass" << '\n';
 
     std::cout << "======================================================================" << '\n';
 
