@@ -14,4 +14,6 @@ int main() {
     while (1==1) {
         std::cout << "This is an infinite loop which is bad\n";
     }
+
+    return 0;
 }
