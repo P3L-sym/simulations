@@ -45,7 +45,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 ## 📁 Project Structure
 
 ```
-simulations/
+simulation/
 │
 ├── learning/                 # C++ basics and learning exercises
 ├── projects/                 # C++ basics and learning projects
