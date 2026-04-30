@@ -3,16 +3,23 @@
 
 int main() {
 
+    int die;
+
     srand(time(NULL));
 
-    int num1 = (rand() % 6) + 1;
-    //for more than one dice 
-    int num2 = (rand() % 6) + 1;
-    int num3 = (rand() % 6) + 1;
+    std::cout << "============================================================\n";
+    
+    std::cout << "How many die do you want to roll: ";
+    std::cin >> die;
 
-    std::cout << num1 << '\n';
-    std::cout << num2 << '\n';
-    std::cout << num3 << '\n';
+    std::cout << "============================================================\n";
+
+    for (int i = 1; i <= die; i++){
+        int num = (rand() % 6) + 1;
+        std::cout << num << '\n';
+    }
+
+    std::cout << "============================================================\n";
 
     return 0;
 }
