@@ -47,13 +47,14 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 ```
 simulations/
 │
-├── 01_foundations/       # C++ basics and learning exercises
-├── 02_single_orbit/      # First orbital simulation
-├── 03_two_body/          # Earth-Moon system
-├── 04_solar_system/      # Full solar system n-body sim
-├── 05_visualisation/     # Graphical rendering
-│
-└── notes/                # Learning notes and references
+├── learning/                 # C++ basics and learning exercises
+├── projects/                 # C++ basics and learning projects
+├── gravsim/                  # C++ basics and learning projects
+│     ├── single_orbit/       # First orbital simulation
+│     ├── two_body/           # Earth-Moon system
+│     ├── olar_system/        # Full solar system n-body sim
+│     └── visualisation/      # Graphical rendering
+└── notes/                    # Learning notes and references
 ```
 
 ---
@@ -72,6 +73,7 @@ simulations/
 Resources I'm using along the way:
 
 - [learncpp.com](https://www.learncpp.com/) — free, comprehensive C++ tutorials
+- C++ Full Course for free by BroCode (https://www.youtube.com/watch?v=-TkoO8Z07hI)
 - [cppreference.com](https://en.cppreference.com/) — C++ standard library reference
 - *The C++ Programming Language* — Bjarne Stroustrup
 - [NASA Horizons System](https://ssd.jpl.nasa.gov/horizons/) — real planetary data
@@ -84,6 +86,7 @@ Resources I'm using along the way:
 | Entry | Topic | Notes |
 |-------|-------|-------|
 | #001 | Repo created | The journey begins 🚀 |
+| #002 | Started working on the fundementals of C++ | Its been alot of fun learning a new language and seeing how old knowledge help you understand the new language quicker |
 
 *This table will grow with each simulation and milestone.*
 
@@ -91,7 +94,7 @@ Resources I'm using along the way:
 
 ## ⚠️ Disclaimer
 
-I'm learning as I go. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress.
+I'm learning as I go. And im not using an LLM for the learning nor the coding of this project. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress. 
 
 ---
 
