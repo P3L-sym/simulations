@@ -1,9 +1,10 @@
 #include <iostream>
 
-void happyBirthday(std::string name) {
+// string name doesnt have to be the same as 
+void happyBirthday(std::string me) {
     std::cout << "Happy birthday to you!\n";
     std::cout << "Happy birthday to you!\n";
-    std::cout << "Happy birthday dear " << name << "!\n";
+    std::cout << "Happy birthday dear " << me << "!\n";
     std::cout << "Happy birthday to you!\n\n";
 }
 
