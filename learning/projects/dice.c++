@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+//use functions to update the app
 
 int main() {
     int typeDice;
