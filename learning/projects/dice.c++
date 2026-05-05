@@ -1,5 +1,76 @@
 #include <iostream>
 #include <ctime>
+//use functions to update the app
+
+void d4(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 4) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d6(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 6) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d8(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 8) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d10(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 10) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d100(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 100) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d12(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 12) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
+
+void d20(int amountDice) {
+    int j = 0;
+
+    for (int i = 1; i <= amountDice; i++) {
+        int num = (rand() % 20) + 1;
+        j++;
+        std::cout << j << ": " << num << '\n';
+    }
+}
 
 int main() {
     int typeDice;
@@ -20,40 +91,19 @@ int main() {
     std::cout << "============================================================\n";
 
     if (typeDice == 4){
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 4) + 1;
-            std::cout << num << '\n';
-        }
+        d4(amountDice);
     } else if (typeDice == 6) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 6) + 1;
-            std::cout << num << '\n';
-        }
+        d6(amountDice);
     } else if (typeDice == 8) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 8) + 1;
-            std::cout << num << '\n';
-        }
+        d8(amountDice);
     } else if (typeDice == 10) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 10) + 1;
-            std::cout << num << '\n';
-        }
+        d10(amountDice);
     } else if (typeDice == 100) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 100) + 1;
-            std::cout << num << '\n';
-        }
+        d100(amountDice);
     } else if (typeDice == 12) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 12) + 1;
-            std::cout << num << '\n';
-        }
+        d12(amountDice);
     } else if (typeDice == 20) {
-        for (int i = 1; i <= amountDice; i++) {
-            int num = (rand() % 20) + 1;
-            std::cout << num << '\n';
-        }
+        d20(amountDice);
     } else {
         std::cout << "Please Enter a Valid Dice!";
     }
