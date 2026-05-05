@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ctime>
-//use functions to update the app
 
 void d4(int amountDice) {
     int j = 0;
