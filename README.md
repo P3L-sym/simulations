@@ -52,7 +52,7 @@ simulation/
 ├── gravsim/                  # C++ basics and learning projects
 │     ├── single_orbit/       # First orbital simulation
 │     ├── two_body/           # Earth-Moon system
-│     ├── olar_system/        # Full solar system n-body sim
+│     ├── solar_system/        # Full solar system n-body sim
 │     └── visualisation/      # Graphical rendering
 └── notes/                    # Learning notes and references
 ```
