@@ -3,15 +3,19 @@
 int myNum = 3;
 
 void printNum() {
-    std::cout << myNum << '\n';
+    //it will take from global cause of the ::
+    int myNum = 2;
+    std::cout << ::myNum << " From global\n";
 }
 
 int main() {
     //local variables == declared inside a function or block {}
     //global variables == declared outside of all functions
 
+    int myNum = 1;
+
     printNum();
-    std::cout << myNum << " From int main(){}\n 2:23:07";
+    std::cout << myNum << " From int main()\n";
 
     return 0;
 }
