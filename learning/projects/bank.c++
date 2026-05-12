@@ -1,15 +1,57 @@
 #include <iostream>
+#include <iomanip>
+#include <limits>
 
 void showBalance(double balance)
 {
+    std::cout << "Your Balance is: $" << std::setprecision(2) << std::fixed << balance << "\n";
+    std::cout << "===============================================================\n";
+    std::cout << '\n';
 }
 
 double deposit()
 {
+    double amount = 0;
+
+    std::cout << "Enter Amount to be deposited: $";
+    std::cin >> amount;
+
+    std::cout << "===============================================================\n";
+
+    if (amount > 0)
+    {
+        return amount;
+    }
+    else
+    {
+        std::cout << "Please Enter a valid amount!\n";
+        return 0;
+    }
 }
 
 double withdraw(double balance)
 {
+    double amount = 0;
+
+    std::cout << "Enter Amount to be withdrawn: $";
+    std::cin >> amount;
+
+    std::cout << "===============================================================\n";
+
+    if (amount > balance)
+    {
+        std::cout << "Insufficient Funds!\n";
+        return 0;
+    }
+    else if (amount < 0)
+    {
+        std::cout << "Thats not a valid amount!\n";
+        return 0;
+    }
+    else 
+    {
+        return amount;
+    }
 }
 
 int main()
@@ -33,6 +75,9 @@ int main()
         std::cin >> choice;
         std::cout << "===============================================================\n";
 
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
         switch (choice)
         {
         case 1:
@@ -40,9 +85,11 @@ int main()
             break;
         case 2:
             balance += deposit();
+            showBalance(balance);
             break;
         case 3:
             balance -= withdraw(balance);
+            showBalance(balance);
             break;
         case 4:
             std::cout << R"( _____                            ______             _    )" << "\n";
@@ -64,6 +111,7 @@ int main()
             break;
         default:
             std::cout << "Please Enter a valid number!\n";
+            break;
         }
     } while (choice != 4);
 
