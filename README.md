@@ -94,7 +94,7 @@ Resources I'm using along the way:
 
 ## ⚠️ Disclaimer
 
-I'm learning as I go. And im not using an LLM for the learning nor the coding of this project. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress. 
+I'm learning as I go. And I'm not using an LLM for the learning nor the coding of this project. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress. 
 
 ---
 
