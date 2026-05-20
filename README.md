@@ -50,13 +50,13 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 simulation/
 │
 ├── learning/                 # C++ basics and learning exercises
+│    └── notes/               # Learning notes and references
 ├── projects/                 # C++ basics and learning projects
-├── gravsim/                  # C++ basics and learning projects
-│     ├── single_orbit/       # First orbital simulation
-│     ├── two_body/           # Earth-Moon system
-│     ├── solar_system/        # Full solar system n-body sim
-│     └── visualisation/      # Graphical rendering
-└── notes/                    # Learning notes and references
+└── gravsim/                  # C++ basics and learning projects
+      ├── single_orbit/       # First orbital simulation
+      ├── two_body/           # Earth-Moon system
+      ├── solar_system/       # Full solar system n-body sim
+      └── visualisation/      # Graphical rendering
 ```
 
 ---
