@@ -10,8 +10,8 @@ This directory serves as my digital brain for C++ concepts. Since I already have
 
 | Topic | Description | Status |
 |-------|-------------|--------|
-| [Memory Management](./memory_management.md) | Pointers, references, heap vs. stack, and smart pointers. | In Progress |
-| [Object-Oriented C++](./oop_basics.md) | Classes, constructors, destructors, and operator overloading (crucial for Vector math). | Planned |
+| [Memory Management](./memory_management.md) | Pointers, references, heap vs. stack, and smart pointers. | Completed |
+| [Object-Oriented C++](./oop_basics.md) | Classes, constructors, destructors, and operator overloading (crucial for Vector math). | In Progress |
 | [CMake & Build Systems](./cmake_setup.md) | How to compile and link C++ projects properly. | Planned |
 | [Performance & Optimisation](./performance.md) | Pass-by-reference, inline functions, and `constexpr`. | Planned |
 | [Math & Physics in C++](./physics_math.md) | Handling floating-point precision, `<cmath>`, and numerical stability. | Planned |
@@ -48,16 +48,16 @@ This directory contains my foundational C++ mini-projects. Before integrating co
 
 | File | Project Name | Concept Focus | Status |
 |------|--------------|---------------|--------|
-| **`bank.c++`** | Space-Bank ATM | `do-while` loops, `switch` statements, and state management (balance tracking). | ✅ Completed |
-| **`cal.c++`** | Console Calculator | Basic arithmetic operations and `switch` statement logic. | ✅ Completed |
-| **`dice.c++`** | Multi-sided Dice Roller | Functions, logic branching, and procedural random generation (`<ctime>`, `rand()`). | ✅ Completed |
-| **`numgame.c++`** | Number Guessing Game | Loop control, user input validation, and comparative conditionals. | ✅ Completed |
-| **`rectangle.c++`** | ASCII Shape Drawer | Nested `for` loops and character output. | ✅ Completed |
-| **`rps.c++`** | Rock, Paper, Scissors | Complex conditional logic, modular design (separating choices and winner calculation into functions). | ✅ Completed |
-| **`temp.c++`** | Temperature Converter | Mathematical conversions (F/C/K) and isolating logic into specialized `void` functions. | ✅ Completed |
-| **`6die.c++`** | Simple D6 Roller | Introduction to `for` loops and modulo arithmetic for bounds. | ✅ Completed |
-| **`20die.c++`** | Simple D20 Roller | Variations on basic random number generation. | ✅ Completed |
-| **`rdmgen.c++`** | RNG Test | Bare-minimum random number seeding. | ✅ Completed |
+| **`bank.c++`** | Space-Bank ATM | `do-while` loops, `switch` statements, and state management (balance tracking). | Completed |
+| **`cal.c++`** | Console Calculator | Basic arithmetic operations and `switch` statement logic. | Completed |
+| **`dice.c++`** | Multi-sided Dice Roller | Functions, logic branching, and procedural random generation (`<ctime>`, `rand()`). | Completed |
+| **`numgame.c++`** | Number Guessing Game | Loop control, user input validation, and comparative conditionals. | Completed |
+| **`rectangle.c++`** | ASCII Shape Drawer | Nested `for` loops and character output. | Completed |
+| **`rps.c++`** | Rock, Paper, Scissors | Complex conditional logic, modular design (separating choices and winner calculation into functions). | Completed |
+| **`temp.c++`** | Temperature Converter | Mathematical conversions (F/C/K) and isolating logic into specialized `void` functions. | Completed |
+| **`6die.c++`** | Simple D6 Roller | Introduction to `for` loops and modulo arithmetic for bounds. | Completed |
+| **`20die.c++`** | Simple D20 Roller | Variations on basic random number generation. | Completed |
+| **`rdmgen.c++`** | RNG Test | Bare-minimum random number seeding. | Completed |
 
 ---
 
