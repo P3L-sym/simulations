@@ -34,6 +34,8 @@ Quick links to documentation and articles I frequently reference while studying:
 
 *"Equipped with his five senses, man explores the universe around him and calls the adventure Science." — Edwin Hubble*
 
+---
+
 # 🛠️ C++ Practice Projects
 
 > *Small, self-contained experiments to build C++ muscle memory before tackling the cosmos.*
@@ -79,3 +81,5 @@ Resources specifically for building, linking, and structuring C++ projects:
 ---
 
 *"The universe is under no obligation to make sense to you." — Neil deGrasse Tyson*
+
+---
