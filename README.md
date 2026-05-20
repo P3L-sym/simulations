@@ -19,6 +19,8 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [X] Variables, data types, and control flow
 - [ ] Functions and basic OOP (classes & objects)
 - [ ] Compiling and running my first program
+- [ ] Running my first OpenGl program
+- [ ] Running my first 3D OpenGl program
 
 ### Phase 2 — First Simulations
 - [ ] Simulating a single planet orbiting a star (Euler method)
@@ -48,13 +50,13 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 simulation/
 │
 ├── learning/                 # C++ basics and learning exercises
+│    └── notes/               # Learning notes and references
 ├── projects/                 # C++ basics and learning projects
-├── gravsim/                  # C++ basics and learning projects
-│     ├── single_orbit/       # First orbital simulation
-│     ├── two_body/           # Earth-Moon system
-│     ├── olar_system/        # Full solar system n-body sim
-│     └── visualisation/      # Graphical rendering
-└── notes/                    # Learning notes and references
+└── gravsim/                  # C++ basics and learning projects
+      ├── single_orbit/       # First orbital simulation
+      ├── two_body/           # Earth-Moon system
+      ├── solar_system/       # Full solar system n-body sim
+      └── visualisation/      # Graphical rendering
 ```
 
 ---
@@ -94,7 +96,7 @@ Resources I'm using along the way:
 
 ## ⚠️ Disclaimer
 
-I'm learning as I go. And im not using an LLM for the learning nor the coding of this project. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress. 
+I'm learning as I go. And I'm not using an LLM for the learning nor the coding of this project. The code in this repo will be messy, wrong sometimes, and then fixed. That's the point. Every commit is progress. 
 
 ---
 
