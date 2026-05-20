@@ -17,7 +17,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 ### Phase 1 — C++ Foundations *(starting here)*
 - [X] Setting up a C++ development environment
 - [X] Variables, data types, and control flow
-- [ ] Functions and basic OOP (classes & objects)
+- [X] Functions and basic OOP (classes & objects)
 - [ ] Compiling and running my first program
 - [ ] Running my first OpenGl program
 - [ ] Running my first 3D OpenGl program
