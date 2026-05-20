@@ -19,6 +19,8 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [X] Variables, data types, and control flow
 - [ ] Functions and basic OOP (classes & objects)
 - [ ] Compiling and running my first program
+- [ ] Running my first OpenGl program
+- [ ] Running my first 3D OpenGl program
 
 ### Phase 2 — First Simulations
 - [ ] Simulating a single planet orbiting a star (Euler method)
