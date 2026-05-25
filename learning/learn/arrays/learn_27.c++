@@ -3,17 +3,19 @@
 #include <algorithm>
 #include <cctype>
 
-std::string toLower(std::string str) {
-    std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c) {
-        return std::tolower(c);
-    });
+std::string toLower(std::string str)
+{
+    std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c)
+                   { return std::tolower(c); });
     return str;
 }
 
-std::string trim(std::string str) {
+std::string trim(std::string str)
+{
     size_t first = str.find_first_not_of(" \t\n\r");
 
-    if(first == std::string::npos) {
+    if (first == std::string::npos)
+    {
         return "";
     }
 
@@ -22,8 +24,10 @@ std::string trim(std::string str) {
     return str.substr(first, (last - first + 1));
 }
 
-int searchFoodArray(std::string array[], int size, std::string element) {
-    for (int i = 0; i < size; i++) {
+int searchFoodArray(std::string array[], int size, std::string element)
+{
+    for (int i = 0; i < size; i++)
+    {
         if (toLower(array[i]) == toLower(element))
         {
             return i + 1;
@@ -32,8 +36,10 @@ int searchFoodArray(std::string array[], int size, std::string element) {
     return -1;
 }
 
-int searchArray(int array[], int size, int element) {
-    for (int i = 0; i < size; i++) {
+int searchArray(int array[], int size, int element)
+{
+    for (int i = 0; i < size; i++)
+    {
         if (array[i] == element)
         {
             return i + 1;
@@ -42,9 +48,10 @@ int searchArray(int array[], int size, int element) {
     return -1;
 }
 
-int main() {
-    std::string foods[] = { "Pizza", "Hamburger", "Dumplings", "Hotdog", "Stirfry"};
-    int foodSize = sizeof(foods)/sizeof(foods[0]);
+int main()
+{
+    std::string foods[] = {"Pizza", "Hamburger", "Dumplings", "Hotdog", "Stirfry"};
+    int foodSize = sizeof(foods) / sizeof(foods[0]);
     int foodIndex;
     std::string myFoods;
 
@@ -70,18 +77,23 @@ int main() {
     foodIndex = searchFoodArray(foods, foodSize, myFoods);
     index = searchArray(numbers, size, myNum);
 
-    if (foodIndex != -1) {
+    if (foodIndex != -1)
+    {
         std::cout << myFoods << " is at index " << foodIndex << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << myFoods << " is not in the array!\n";
     }
 
     std::cout << "======================================================================\n";
 
-
-    if (index != -1) {
+    if (index != -1)
+    {
         std::cout << myNum << " is at index " << index << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << myNum << " is not in the array!\n";
     }
 

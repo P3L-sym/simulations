@@ -1,19 +1,24 @@
 #include <iostream>
 #include <string>
 
-int main(){
+int main()
+{
     std::string foods[5];
-    int size = sizeof(foods)/sizeof(foods[0]);
+    int size = sizeof(foods) / sizeof(foods[0]);
     std::string temp;
-    
+
     std::cout << "======================================================================\n";
-    
-    for(int i = 0 ; i < size; i++){
-        std::cout << "Enter a fodd you like or q to quit #" << i + 1 << ": " ;
+
+    for (int i = 0; i < size; i++)
+    {
+        std::cout << "Enter a fodd you like or q to quit #" << i + 1 << ": ";
         std::getline(std::cin, temp);
-        if(temp == "q"){
+        if (temp == "q")
+        {
             break;
-        } else{
+        }
+        else
+        {
             foods[i] = temp;
         }
     }
@@ -22,7 +27,8 @@ int main(){
 
     std::cout << "======================================================================\n";
 
-    for(int i = 0; !foods[i].empty(); i++){
+    for (int i = 0; !foods[i].empty(); i++)
+    {
         std::cout << foods[i] << '\n';
     }
 

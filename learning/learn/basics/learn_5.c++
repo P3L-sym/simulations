@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cmath>
 
-int main() {
+int main()
+{
     double c;
     double a;
     double b;

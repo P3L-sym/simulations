@@ -2,8 +2,8 @@
 
 int main()
 {
-    // int does NOT have a default value 
-    // it uses the last stored data if it is unitilized 
+    // int does NOT have a default value
+    // it uses the last stored data if it is unitilized
     // hence why im getting 32759 instead of 0 as expected
     int number;
 
@@ -12,7 +12,8 @@ int main()
     //     std::cin >> number;
     // }
 
-    do {
+    do
+    {
         std::cout << "Enter a positive number: ";
         std::cin >> number;
     } while (number < 0);

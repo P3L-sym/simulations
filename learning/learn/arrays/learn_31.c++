@@ -26,7 +26,7 @@ int main()
     {
         for (int j = 0; j < columns; j++)
         {
-            std::cout << cars[i][j] << '\n';  
+            std::cout << cars[i][j] << '\n';
         }
         std::cout << '\n';
     }

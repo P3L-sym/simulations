@@ -1,24 +1,28 @@
 #include <iostream>
 
-double square(double length){
+double square(double length)
+{
     double result = length * length;
     return result;
 }
 
-double cube(double length){
+double cube(double length)
+{
     double result = length * length * length;
     return result;
 }
 
-std::string cStrings(std::string fName, std::string lName){
+std::string cStrings(std::string fName, std::string lName)
+{
     std::string fString = fName + " " + lName;
     return fString;
 }
 
-int main() {
+int main()
+{
     double length;
-    std:: string fName;
-    std:: string lName;
+    std::string fName;
+    std::string lName;
 
     std::cout << "============================================================\n";
 
@@ -35,7 +39,7 @@ int main() {
 
     double area = square(length);
     double volume = cube(length);
-    std:: string name = cStrings(fName, lName);
+    std::string name = cStrings(fName, lName);
 
     std::cout << "============================================================\n";
 

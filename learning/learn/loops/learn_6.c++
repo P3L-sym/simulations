@@ -2,7 +2,8 @@
 #include <cmath>
 #include <string>
 
-int main() {
+int main()
+{
     std::string name;
     int age;
     int a;
@@ -19,13 +20,18 @@ int main() {
 
     std::cout << "======================================================================" << '\n';
 
-    if (age >= 21 && age <= 80){
+    if (age >= 21 && age <= 80)
+    {
         std::cout << "Thank You " << name << " for signing up" << '\n';
         std::cout << "Welcome to the Space Program" << '\n';
-    } else if (age < 21){
+    }
+    else if (age < 21)
+    {
         std::cout << "Sorry " << name << " you are too Young" << '\n';
         std::cout << "Please come back in " << a << " years!" << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << "Sorry " << name << " you are too Old" << '\n';
         std::cout << "But Earth still needs You here" << '\n';
     }

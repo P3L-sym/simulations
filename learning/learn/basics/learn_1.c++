@@ -2,23 +2,24 @@
 
 using text_t = std::string;
 
-int main() {
+int main()
+{
     text_t intro = "Hello!!!!!";
     text_t means = "This is the first commit to my C++ Journey, I have started learning C++ and I know C# and Java but Im still new to this.";
     text_t doing = "For this first one im just gonna do these formulas, A=P(1+ni) and A=P(1-ni), and then see if it works out.";
     text_t cool = "Oke now that i have the language working properly and I can run my code I want to move on to bigger things.";
     text_t next = "Next im going to complete a C++ course (https://youtu.be/-TkoO8Z07hI?si=ZQGAwtocEP9y1Ke0) and then Ill move on to new bigger tasks.";
-    
+
     const double p = 15;
     const double n = 5;
     const double i = 0.07;
-    double A1 = p * (1 + n * i);                        // the answer is 20.25
-    double A2 = p * (1 - n * i);                        // the answer is 9.75
+    double A1 = p * (1 + n * i); // the answer is 20.25
+    double A2 = p * (1 - n * i); // the answer is 9.75
 
     const double a = 20;
     const double d = 30;
-    double T = a + (n - 1) * d;                        // the answer is 140
-    double S = n / 2 * (2 * a + (n - 1) * d);          // the abswer is 400
+    double T = a + (n - 1) * d;               // the answer is 140
+    double S = n / 2 * (2 * a + (n - 1) * d); // the abswer is 400
 
     int planets = 20;
     int stars = 20;
@@ -27,9 +28,9 @@ int main() {
 
     planets = planets + 1;
     stars--;
-    solarSystems*=2;
-    astroids/=3;
-    
+    solarSystems *= 2;
+    astroids /= 3;
+
     // planets == 21 cause of line 28
     int remainder = planets % 2;
 

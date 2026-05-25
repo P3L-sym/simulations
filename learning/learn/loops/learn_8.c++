@@ -1,12 +1,13 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     char an;
     bool thought;
     int grade;
     double f;
     double p;
-    
+
     std::cout << "======================================================================" << '\n';
 
     std::cout << "Do you thin you passed (y/n): ";
@@ -24,9 +25,12 @@ int main() {
     //         break;
     // }
 
-    if(an == 'y') {
+    if (an == 'y')
+    {
         thought = true;
-    } else if(an == 'n') {
+    }
+    else if (an == 'n')
+    {
         thought = false;
     }
 
@@ -49,7 +53,10 @@ int main() {
 
     std::cout << "======================================================================" << '\n';
 
-    grade >= 60 ? std::cout << "You passed" << '\n' << "You passed with " << p << "%" << '\n' : std::cout << "You failed" << '\n' << "You needed " << f << "% to pass" << '\n';
+    grade >= 60 ? std::cout << "You passed" << '\n'
+                            << "You passed with " << p << "%" << '\n'
+                : std::cout << "You failed" << '\n'
+                            << "You needed " << f << "% to pass" << '\n';
 
     std::cout << "======================================================================" << '\n';
 

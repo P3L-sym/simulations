@@ -1,7 +1,8 @@
-#include <iostream> 
+#include <iostream>
 
-int main() {
-    double prices[] = { 5.00, 7.50, 9.99, 15.00, 999.99 };
+int main()
+{
+    double prices[] = {5.00, 7.50, 9.99, 15.00, 999.99};
 
     std::cout << prices[0] << '\n';
     std::cout << prices[1] << '\n';

@@ -48,7 +48,7 @@ double withdraw(double balance)
         std::cout << "Thats not a valid amount!\n";
         return 0;
     }
-    else 
+    else
     {
         return amount;
     }
