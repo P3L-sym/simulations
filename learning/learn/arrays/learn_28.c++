@@ -16,7 +16,7 @@ void sort(int array[], int size){
 
 int main(){
     int array[] = { 10, 5, 8, 2, 1, 7, 4, 9, 6, 3 };
-    int size = sizeof(array)/sizeof(int);
+    int size = sizeof(array)/sizeof(array[0]);
 
     sort(array, size);
 

@@ -5,7 +5,7 @@ int main() {
     char grades[] = { 'A', 'B', 'C', 'D', 'F' };
 
     for(int i = 0; i < sizeof(students)/sizeof(std::string); i++) {
-        for(int j = 0; j <sizeof(grades)/sizeof(char); j++) {
+        for(int j = 0; j <sizeof(grades)/sizeof(grades[0]); j++) {
             std::cout << students[i] << " " << grades[j] << '\n';
         }
     }

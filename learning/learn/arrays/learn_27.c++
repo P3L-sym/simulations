@@ -44,12 +44,12 @@ int searchArray(int array[], int size, int element) {
 
 int main() {
     std::string foods[] = { "Pizza", "Hamburger", "Dumplings", "Hotdog", "Stirfry"};
-    int foodSize = sizeof(foods)/sizeof(std::string);
+    int foodSize = sizeof(foods)/sizeof(foods[0]);
     int foodIndex;
     std::string myFoods;
 
     int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int size = sizeof(numbers) / sizeof(int);
+    int size = sizeof(numbers) / sizeof(numbers[0]);
     int index;
     int myNum;
 

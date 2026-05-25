@@ -3,7 +3,7 @@
 
 int main(){
     std::string foods[5];
-    int size = sizeof(foods)/sizeof(std::string);
+    int size = sizeof(foods)/sizeof(foods[0]);
     std::string temp;
     
     std::cout << "======================================================================\n";

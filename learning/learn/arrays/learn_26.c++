@@ -12,7 +12,7 @@ double getTotal(double prices[], int size) {
 
 int main() {
     double prices[] = { 50.00, 77.50, 19.99, 15.00, 999.99 };
-    int size = sizeof(prices)/sizeof(double);
+    int size = sizeof(prices)/sizeof(prices[0]);
     double total = getTotal(prices, size);
 
     std::cout << "$" << total;
