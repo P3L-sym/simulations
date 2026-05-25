@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int displayQuiz(std::string questions[], std::string options[][4], char answersKey[], int size){
+int displayQuiz(std::string questions[], std::string options[][4], char answersKey[], int size)
+{
     char guess = 0;
     int score = 0;
 
@@ -35,14 +36,15 @@ int displayQuiz(std::string questions[], std::string options[][4], char answersK
     return score;
 }
 
-void displayResults(int score, int size){
+void displayResults(int score, int size)
+{
     std::cout << "========================================================================================================================================================\n";
     std::cout << "Results\n";
     std::cout << "========================================================================================================================================================\n";
 
     std::cout << "Correct Guesses: " << score << '\n';
     std::cout << "# of questions: " << size << '\n';
-    std::cout << "Score: " << (score/(double)size)*100 << "%\n";
+    std::cout << "Score: " << (score / (double)size) * 100 << "%\n";
 }
 
 int main()
