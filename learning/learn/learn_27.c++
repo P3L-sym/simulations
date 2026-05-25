@@ -43,7 +43,7 @@ int searchArray(int array[], int size, int element) {
 }
 
 int main() {
-    std::string foods[] = { "Pizza", "Hamburger", "Dumpling", "Hotdog", "Stirfry"};
+    std::string foods[] = { "Pizza", "Hamburger", "Dumplings", "Hotdog", "Stirfry"};
     int foodSize = sizeof(foods)/sizeof(std::string);
     int foodIndex;
     std::string myFoods;
