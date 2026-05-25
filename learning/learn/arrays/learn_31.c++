@@ -6,11 +6,30 @@ int main()
                               {"Camaro", "Implala", "Corvette"},
                               {"Challenger", "Durango", "Ram"}};
 
-    int rows = sizeof(cars)/sizeof(cars[0]);
-    int columns = sizeof(cars[0])/sizeof(cars[0][0]);
+    // you have to use the elements to do the right math for the arrays
+    int rows = sizeof(cars) / sizeof(cars[0]);
+    int columns = sizeof(cars[0]) / sizeof(cars[0][0]);
 
-    std::cout << rows << '\n';
-    std::cout << columns << '\n';
+    std::cout << rows << " Rows" << '\n';
+    std::cout << columns << " Columns" << '\n'
+              << '\n';
+
+    // memory addresses
+    for (int i = 0; i < rows; i++)
+    {
+        std::cout << cars[i] << ' ';
+    }
+
+    std::cout << '\n';
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+        {
+            std::cout << cars[i][j] << '\n';  
+        }
+        std::cout << '\n';
+    }
 
     // std::cout << "Ford " << cars[0][0] << '\n';
     // std::cout << "Ford " << cars[0][1] << '\n';
