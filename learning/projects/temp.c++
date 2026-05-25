@@ -68,8 +68,10 @@ void kelvinToCelsius(int temp, int ans)
 
 int main()
 {
-    double temp; double ans;
-    char stUnit; char finUnit;
+    double temp;
+    double ans;
+    char stUnit;
+    char finUnit;
 
     std::cout << "========================Temperature Conversion========================\n";
     std::cout << "F = Fahrenheit\n";

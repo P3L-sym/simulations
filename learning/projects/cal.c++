@@ -1,6 +1,7 @@
-# include <iostream>
+#include <iostream>
 
-int main() {
+int main()
+{
     char op;
     double num1;
     double num2;
@@ -19,26 +20,27 @@ int main() {
     std::cout << "Enter your second Number: ";
     std::cin >> num2;
 
-    switch (op) {
-        case '+':
-            result = num1 + num2;
-            std::cout << num1 << " + " << num2 << " = " << result << '\n';
-            break;
-        case '-':
-            result = num1 - num2;
-            std::cout << num1 << " - " << num2 << " = " << result << '\n';
-            break;
-        case '*':
-            result = num1 * num2;
-            std::cout << num1 << " * " << num2 << " = " << result << '\n';
-            break;
-        case '/':
-            result = num1 / num2;
-            std::cout << num1 << " / " << num2 << " = " << result << '\n';
-            break;
-        default:
-            std::cout << "Please Enter a valid mathematical operations" << '\n';
-            break;
+    switch (op)
+    {
+    case '+':
+        result = num1 + num2;
+        std::cout << num1 << " + " << num2 << " = " << result << '\n';
+        break;
+    case '-':
+        result = num1 - num2;
+        std::cout << num1 << " - " << num2 << " = " << result << '\n';
+        break;
+    case '*':
+        result = num1 * num2;
+        std::cout << num1 << " * " << num2 << " = " << result << '\n';
+        break;
+    case '/':
+        result = num1 / num2;
+        std::cout << num1 << " / " << num2 << " = " << result << '\n';
+        break;
+    default:
+        std::cout << "Please Enter a valid mathematical operations" << '\n';
+        break;
     }
 
     std::cout << "======================================================================" << '\n';

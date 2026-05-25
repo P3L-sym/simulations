@@ -1,14 +1,15 @@
 #include <iostream>
 
-int main() {
-    //implicit
-    double x = (int) 3.14;
+int main()
+{
+    // implicit
+    double x = (int)3.14;
     char y = 100;
 
     std::cout << x << '\n';
     std::cout << y << '\n';
 
-    //explicit
+    // explicit
     std::cout << (char)120 << '\n';
     std::cout << '\n';
 

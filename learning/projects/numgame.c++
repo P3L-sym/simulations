@@ -1,7 +1,8 @@
 #include <iostream>
 #include <ctime>
 
-int main() {
+int main()
+{
     int num;
     int guess;
     int tries = 0;
@@ -13,20 +14,26 @@ int main() {
     std::cout << "Number guessing game\n";
     std::cout << "======================================================================\n";
 
-    do {
+    do
+    {
         std::cout << "Enter a guess between (1-100): ";
         std::cin >> guess;
         tries++;
 
-        if(guess > num) {
+        if (guess > num)
+        {
             std::cout << "Too High!\n";
-        } else if(guess < num) {
+        }
+        else if (guess < num)
+        {
             std::cout << "Too Low!\n";
-        } else {
+        }
+        else
+        {
             std::cout << "You Guessed Right!\n";
             std::cout << "You did it in " << tries << " tries!\n";
         }
-    } while(guess != num);
+    } while (guess != num);
 
     std::cout << "======================================================================\n";
 

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cmath> //https://cplusplus.com/reference/cmath/
 
-int main() {
+int main()
+{
     double x;
     double y;
     double n;
@@ -44,14 +45,17 @@ int main() {
 
     a = abs(t);
 
-    //ceil will round it up and floor will always round down 
+    // ceil will round it up and floor will always round down
     b = round(u);
 
     std::cout << "======================================================================" << '\n';
 
-    if (answer == "max") {
+    if (answer == "max")
+    {
         std::cout << "Max: " << max << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << "Min: " << min << '\n';
     }
 

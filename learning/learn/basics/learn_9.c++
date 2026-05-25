@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int temp;
     int spstemp;
     bool overheat;
@@ -17,24 +18,33 @@ int main() {
 
     std::cout << "======================================================================" << '\n';
 
-    //and
-    if(temp > 0 && temp < 30) {
+    // and
+    if (temp > 0 && temp < 30)
+    {
         std::cout << "The temperature is Good" << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << "The temperature is Bad" << '\n';
     }
 
-    //or
-    if(spstemp <=30 || spstemp >=150) {
+    // or
+    if (spstemp <= 30 || spstemp >= 150)
+    {
         std::cout << "The SpaceShip temperature is Bad" << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << "The SpaceShip temperature is Good" << '\n';
     }
 
-    //not
-    if (!overheat) {
+    // not
+    if (!overheat)
+    {
         std::cout << "The SpaceShip is not overheating" << '\n';
-    } else {
+    }
+    else
+    {
         std::cout << "The SpaceShip is overheating" << '\n';
     }
 
