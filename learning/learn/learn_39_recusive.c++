@@ -8,9 +8,19 @@ void walk(int steps){
     }
 }
 
+int factorial(int num){
+    if(num > 1){
+        return num * factorial(num - 1);
+    } else {
+        return 1;
+    }
+}
+
 int main() {
 
-    walk(100);
+    // walk(100);
+
+    std::cout << factorial(10);
 
     return 0;
 }
