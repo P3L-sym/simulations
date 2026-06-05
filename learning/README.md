@@ -40,7 +40,7 @@ Quick links to documentation and articles I frequently reference while studying:
 
 > *Small, self-contained experiments to build C++ muscle memory before tackling the cosmos.*
 
-This directory contains my foundational C++ mini-projects. Before integrating complex systems into the main `gravsim` engine, I built these console applications to master the basics of the language: control flow, standard input/output, random number generation, and function design. 
+This directory contains my foundational C++ mini-projects. Before integrating complex systems into the main `gravsim` engine, I built these console applications to master the basics of the language: control flow, standard input/output, random number generation, and function design.
 
 ---
 
@@ -48,16 +48,19 @@ This directory contains my foundational C++ mini-projects. Before integrating co
 
 | File | Project Name | Concept Focus | Status |
 |------|--------------|---------------|--------|
+| **`6die.c++`** | Simple D6 Roller | Introduction to `for` loops and modulo arithmetic for bounds. | Completed |
+| **`20die.c++`** | Simple D20 Roller | Variations on basic random number generation. | Completed |
 | **`bank.c++`** | Space-Bank ATM | `do-while` loops, `switch` statements, and state management (balance tracking). | Completed |
 | **`cal.c++`** | Console Calculator | Basic arithmetic operations and `switch` statement logic. | Completed |
+| **`credval.c++`** | Credit Card Validator | Luhn algorithm implementation using string traversal, modulo arithmetic, and digit extraction via pointer-free index math. | Completed |
 | **`dice.c++`** | Multi-sided Dice Roller | Functions, logic branching, and procedural random generation (`<ctime>`, `rand()`). | Completed |
 | **`numgame.c++`** | Number Guessing Game | Loop control, user input validation, and comparative conditionals. | Completed |
+| **`quizgame.c++`** | AstroPhysics Quiz | 2D arrays for question/option storage, parallel arrays for answer keys, and modular design separating display and scoring logic. | Completed |
+| **`rdmgen.c++`** | RNG Test | Bare-minimum random number seeding. | Completed |
 | **`rectangle.c++`** | ASCII Shape Drawer | Nested `for` loops and character output. | Completed |
 | **`rps.c++`** | Rock, Paper, Scissors | Complex conditional logic, modular design (separating choices and winner calculation into functions). | Completed |
 | **`temp.c++`** | Temperature Converter | Mathematical conversions (F/C/K) and isolating logic into specialized `void` functions. | Completed |
-| **`6die.c++`** | Simple D6 Roller | Introduction to `for` loops and modulo arithmetic for bounds. | Completed |
-| **`20die.c++`** | Simple D20 Roller | Variations on basic random number generation. | Completed |
-| **`rdmgen.c++`** | RNG Test | Bare-minimum random number seeding. | Completed |
+| **`tictactoe.c++`** | Tic-Tac-Toe vs CPU | Pointer-based board state, random computer AI using `<ctime>`, win/tie detection across rows, columns, and diagonals, and a main game loop with alternating turns. | Completed |
 
 ---
 
@@ -67,6 +70,9 @@ While these are basic console apps, the mechanics learned here are the building 
 * **Random Number Generation (`<ctime>`, `rand()`):** Essential for procedurally generating star fields or initializing particles with random velocities.
 * **Nested Loops (`rectangle.c++`):** The exact same logic used to iterate through 2D and 3D grids or arrays of celestial bodies.
 * **State Management (`bank.c++`):** Keeping track of a bank balance uses the same core logic as keeping track of a planet's energy or momentum frame over frame.
+* **Luhn Algorithm (`credval.c++`):** Demonstrates precise index arithmetic and digit manipulation — the same kind of careful positional logic needed when indexing into simulation grids or particle arrays.
+* **2D Arrays (`quizgame.c++`):** Directly maps to storing multi-body simulation data (e.g. a grid of force vectors or a matrix of particle states).
+* **Pointer-based State + Game Loop (`tictactoe.c++`):** A miniature simulation loop — updating state each turn and checking termination conditions mirrors how a physics engine steps forward in time and checks for stability or collision events.
 
 ---
 
@@ -81,5 +87,3 @@ Resources specifically for building, linking, and structuring C++ projects:
 ---
 
 *"The universe is under no obligation to make sense to you." — Neil deGrasse Tyson*
-
----
