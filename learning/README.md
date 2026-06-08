@@ -11,7 +11,7 @@ This directory serves as my digital brain for C++ concepts. Since I already have
 | Topic | Description | Status |
 |-------|-------------|--------|
 | [Memory Management](./memory_management.md) | Pointers, references, heap vs. stack, and smart pointers. | Completed |
-| [Object-Oriented C++](./oop_basics.md) | Classes, constructors, destructors, and operator overloading (crucial for Vector math). | In Progress |
+| [Object-Oriented C++](./oop_basics.md) | Classes, constructors, destructors, and operator overloading (crucial for Vector math). | Completed |
 | [CMake & Build Systems](./cmake_setup.md) | How to compile and link C++ projects properly. | Planned |
 | [Performance & Optimisation](./performance.md) | Pass-by-reference, inline functions, and `constexpr`. | Planned |
 | [Math & Physics in C++](./physics_math.md) | Handling floating-point precision, `<cmath>`, and numerical stability. | Planned |
