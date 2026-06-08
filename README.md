@@ -18,7 +18,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [X] Setting up a C++ development environment
 - [X] Variables, data types, and control flow
 - [X] Functions and basic OOP (classes & objects)
-- [ ] Compiling and running my first program
+- [X] Compiling and running my first program
 - [ ] Running my first OpenGl program
 - [ ] Running my first 3D OpenGl program
 
