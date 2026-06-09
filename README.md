@@ -23,6 +23,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [ ] Running my first 3D OpenGl program
 
 ### Phase 2 — First Simulations
+- [X] Simulating 2D gravity
 - [ ] Simulating a single planet orbiting a star (Euler method)
 - [ ] Plotting orbital paths to the console
 - [ ] Adding a second body — the Moon
