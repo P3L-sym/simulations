@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=grav_window_test
+CMAKE_PROJECT_NAME:STATIC=grav_window
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -273,6 +273,15 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
+
+//Value Computed by CMake
+grav_window_BINARY_DIR:STATIC=E:/dev/simulations/build
+
+//Value Computed by CMake
+grav_window_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+grav_window_SOURCE_DIR:STATIC=E:/dev/simulations
 
 //Value Computed by CMake
 grav_window_test_BINARY_DIR:STATIC=E:/dev/simulations/build

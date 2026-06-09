@@ -62,5 +62,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/grav_window_test.dir/DependInfo.cmake"
+  "CMakeFiles/grav_window.dir/DependInfo.cmake"
   )

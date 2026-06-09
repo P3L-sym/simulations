@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/dev/simulations/src/glad.c" "CMakeFiles/grav_window_test.dir/src/glad.c.obj" "gcc" "CMakeFiles/grav_window_test.dir/src/glad.c.obj.d"
-  "E:/dev/simulations/src/gravsim/gravsim_window.c++" "CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj" "gcc" "CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj.d"
+  "E:/dev/simulations/src/glad.c" "CMakeFiles/grav_window.dir/src/glad.c.obj" "gcc" "CMakeFiles/grav_window.dir/src/glad.c.obj.d"
+  "E:/dev/simulations/src/gravsim/gravsim.c++" "CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj" "gcc" "CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

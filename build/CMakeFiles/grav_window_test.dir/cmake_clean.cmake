@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/grav_window_test.dir/src/glad.c.obj"
   "CMakeFiles/grav_window_test.dir/src/glad.c.obj.d"
-  "CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj"
-  "CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj.d"
+  "CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj"
+  "CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj.d"
   "grav_window_test.exe"
   "grav_window_test.exe.manifest"
   "grav_window_test.pdb"
