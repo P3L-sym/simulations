@@ -66,8 +66,8 @@ int main(){
     int res = 100;
 
     std::vector<Object> objs = {
-        Object(std::vector<float>{200.0f, 500.0f}, std::vector<float>{5.0f, 0.0f}),
-        Object(std::vector<float>{700.0f, 500.0f}, std::vector<float>{5.0f, 0.0f})
+        Object(std::vector<float>{200.0f, 00.0f}, std::vector<float>{5.0f, 0.0f}),
+        Object(std::vector<float>{700.0f,00.0f}, std::vector<float>{5.0f, 0.0f})
     };
 
     while (!glfwWindowShouldClose(window)){
