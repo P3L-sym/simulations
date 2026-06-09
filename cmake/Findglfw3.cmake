@@ -18,12 +18,14 @@ set( _glfw3_HEADER_SEARCH_DIRS
 "/usr/include"
 "/usr/local/include"
 "${CMAKE_SOURCE_DIR}/includes"
-"C:/dev/glfw/include" )
+"C:/dev/glfw/include"
+"E:/dev/glfw/include" )
 set( _glfw3_LIB_SEARCH_DIRS
 "/usr/lib"
 "/usr/local/lib"
 "${CMAKE_SOURCE_DIR}/lib"
-"C:/dev/glfw/lib-mingw-w64" )
+"C:/dev/glfw/lib-mingw-w64"
+"E:/dev/glfw/lib-mingw-w64" )
 
 # Check environment for root search directory
 set( _glfw3_ENV_ROOT $ENV{GLFW3_ROOT} )
