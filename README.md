@@ -67,7 +67,7 @@ simulation/
 - **Language:** C++ (C++17)
 - **Build System:** CMake
 - **Visualisation (planned):** SFML / OpenGL
-- **Physics:** Newtonian gravity, numerical integration
+- **Physics:** Einstein's Theory of Relativity, Newtonian gravity, numerical integration
 
 ---
 
