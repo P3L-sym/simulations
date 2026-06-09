@@ -66,7 +66,7 @@ simulation/
 
 - **Language:** C++ (C++17)
 - **Build System:** CMake
-- **Visualisation (planned):** SFML / OpenGL
+- **Visualisation (planned):** OpenGL
 - **Physics:** Einstein's Theory of Relativity, Newtonian gravity, numerical integration
 
 ---
@@ -76,11 +76,13 @@ simulation/
 Resources I'm using along the way:
 
 - [learncpp.com](https://www.learncpp.com/) — free, comprehensive C++ tutorials
-- C++ Full Course for free by BroCode (https://www.youtube.com/watch?v=-TkoO8Z07hI)
+- [C++ Full Course for free by BroCode](https://www.youtube.com/watch?v=-TkoO8Z07hI)
 - [cppreference.com](https://en.cppreference.com/) — C++ standard library reference
 - *The C++ Programming Language* — Bjarne Stroustrup
 - [NASA Horizons System](https://ssd.jpl.nasa.gov/horizons/) — real planetary data
 - [Three-Body Problem — Wikipedia](https://en.wikipedia.org/wiki/Three-body_problem)
+- [Simulating Gravity in C++](https://www.youtube.com/watch?v=_YbGWoUaZg0)
+- [CMake Project Setup (Windows, OpenGL, GLFW, GLAD)](https://www.youtube.com/watch?v=Z2MiPOepwPE&list=PLn3eTxaOtL2PHxN8EHf-ktAcN-sGETKfw&index=2)
 
 ---
 
