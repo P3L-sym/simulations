@@ -91,6 +91,8 @@ Resources I'm using along the way:
 | #001 | Repo created | The journey begins 🚀 |
 | #002 | Started working on the fundementals of C++ | Its been alot of fun learning a new language and seeing how old knowledge help you understand the new language quicker |
 | #003 | Completed all of the C++ basics and OOP | I completed the C++ course that I was doing and am now ready to start moving on to learning how to make a opengl window and render planets and move on to the gravity sim  |
+| #004 | Made a Window | I created a window wile using OpenGl |
+| #005 | Generated a 2D object | I generated a 2D object and added some garavity(that is abit broken still) |
 
 *This table will grow with each simulation and milestone.*
 
