@@ -915,7 +915,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "grav_window_test"
+			"value" : "grav_window"
 		},
 		{
 			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
@@ -1460,6 +1460,42 @@
 			],
 			"type" : "STRING",
 			"value" : "glu32"
+		},
+		{
+			"name" : "grav_window_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/dev/simulations/build"
+		},
+		{
+			"name" : "grav_window_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "grav_window_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/dev/simulations"
 		},
 		{
 			"name" : "grav_window_test_BINARY_DIR",

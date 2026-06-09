@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(grav_window_test VERSION 1.0.0)
+project(grav_window VERSION 1.0.0)
 
 cmake_policy(SET CMP0072 NEW)
 
@@ -39,13 +39,13 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(GLFW3 DEFAULT_MSG GLFW3_LIBRARY GLFW3_INCLUDE_
 find_package(OpenGL REQUIRED)
 
 add_executable(
-    grav_window_test
-    src/learning/opengl/opengl.c++
+    grav_window
+    src/gravsim/gravsim.c++
     src/glad.c
 )
 
 target_include_directories(
-    grav_window_test 
+    grav_window
     PRIVATE
     dependencies
     ${GLFW3_INCLUDE_DIR}
@@ -53,7 +53,7 @@ target_include_directories(
 )
 
 target_link_libraries(
-    grav_window_test
+    grav_window
     ${GLFW3_LIBRARY}
     OpenGL::GL
     -lgdi32

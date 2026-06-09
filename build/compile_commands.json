@@ -1,14 +1,14 @@
 [
 {
   "directory": "E:/dev/simulations/build",
-  "command": "E:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window_test.dir/includes_CXX.rsp -g -o CMakeFiles\\grav_window_test.dir\\src\\learning\\opengl\\opengl.c++.obj -c E:\\dev\\simulations\\src\\learning\\opengl\\opengl.c++",
-  "file": "E:/dev/simulations/src/learning/opengl/opengl.c++",
-  "output": "CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj"
+  "command": "E:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -o CMakeFiles\\grav_window.dir\\src\\gravsim\\gravsim.c++.obj -c E:\\dev\\simulations\\src\\gravsim\\gravsim.c++",
+  "file": "E:/dev/simulations/src/gravsim/gravsim.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj"
 },
 {
   "directory": "E:/dev/simulations/build",
-  "command": "E:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/grav_window_test.dir/includes_C.rsp -g -o CMakeFiles\\grav_window_test.dir\\src\\glad.c.obj -c E:\\dev\\simulations\\src\\glad.c",
+  "command": "E:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/grav_window.dir/includes_C.rsp -g -o CMakeFiles\\grav_window.dir\\src\\glad.c.obj -c E:\\dev\\simulations\\src\\glad.c",
   "file": "E:/dev/simulations/src/glad.c",
-  "output": "CMakeFiles/grav_window_test.dir/src/glad.c.obj"
+  "output": "CMakeFiles/grav_window.dir/src/glad.c.obj"
 }
 ]

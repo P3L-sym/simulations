@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named grav_window_test
+# Target rules for targets named grav_window
 
 # Build rule for target.
-grav_window_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 grav_window_test
-.PHONY : grav_window_test
+grav_window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 grav_window
+.PHONY : grav_window
 
 # fast build rule for target.
-grav_window_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/build
-.PHONY : grav_window_test/fast
+grav_window/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/build
+.PHONY : grav_window/fast
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -141,7 +141,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -149,32 +149,32 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
-src/learning/opengl/opengl.obj: src/learning/opengl/opengl.c++.obj
-.PHONY : src/learning/opengl/opengl.obj
+src/gravsim/gravsim.obj: src/gravsim/gravsim.c++.obj
+.PHONY : src/gravsim/gravsim.obj
 
 # target to build an object file
-src/learning/opengl/opengl.c++.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj
-.PHONY : src/learning/opengl/opengl.c++.obj
+src/gravsim/gravsim.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj
+.PHONY : src/gravsim/gravsim.c++.obj
 
-src/learning/opengl/opengl.i: src/learning/opengl/opengl.c++.i
-.PHONY : src/learning/opengl/opengl.i
+src/gravsim/gravsim.i: src/gravsim/gravsim.c++.i
+.PHONY : src/gravsim/gravsim.i
 
 # target to preprocess a source file
-src/learning/opengl/opengl.c++.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.i
-.PHONY : src/learning/opengl/opengl.c++.i
+src/gravsim/gravsim.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.i
+.PHONY : src/gravsim/gravsim.c++.i
 
-src/learning/opengl/opengl.s: src/learning/opengl/opengl.c++.s
-.PHONY : src/learning/opengl/opengl.s
+src/gravsim/gravsim.s: src/gravsim/gravsim.c++.s
+.PHONY : src/gravsim/gravsim.s
 
 # target to generate assembly for a file
-src/learning/opengl/opengl.c++.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window_test.dir\build.make CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.s
-.PHONY : src/learning/opengl/opengl.c++.s
+src/gravsim/gravsim.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.s
+.PHONY : src/gravsim/gravsim.c++.s
 
 # Help Target
 help:
@@ -184,13 +184,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... grav_window_test
+	@echo ... grav_window
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
-	@echo ... src/learning/opengl/opengl.obj
-	@echo ... src/learning/opengl/opengl.i
-	@echo ... src/learning/opengl/opengl.s
+	@echo ... src/gravsim/gravsim.obj
+	@echo ... src/gravsim/gravsim.i
+	@echo ... src/gravsim/gravsim.s
 .PHONY : help
 
 

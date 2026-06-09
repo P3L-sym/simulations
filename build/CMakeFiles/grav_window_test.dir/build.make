@@ -71,20 +71,20 @@ include CMakeFiles/grav_window_test.dir/flags.make
 CMakeFiles/grav_window_test.dir/codegen:
 .PHONY : CMakeFiles/grav_window_test.dir/codegen
 
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj: CMakeFiles/grav_window_test.dir/flags.make
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj: CMakeFiles/grav_window_test.dir/includes_CXX.rsp
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj: E:/dev/simulations/src/learning/opengl/opengl.c++
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj: CMakeFiles/grav_window_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\dev\simulations\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj -MF CMakeFiles\grav_window_test.dir\src\learning\opengl\opengl.c++.obj.d -o CMakeFiles\grav_window_test.dir\src\learning\opengl\opengl.c++.obj -c E:\dev\simulations\src\learning\opengl\opengl.c++
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj: CMakeFiles/grav_window_test.dir/flags.make
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj: CMakeFiles/grav_window_test.dir/includes_CXX.rsp
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj: E:/dev/simulations/src/gravsim/gravsim_window.c++
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj: CMakeFiles/grav_window_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\dev\simulations\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj"
+	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj -MF CMakeFiles\grav_window_test.dir\src\gravsim\gravsim_window.c++.obj.d -o CMakeFiles\grav_window_test.dir\src\gravsim\gravsim_window.c++.obj -c E:\dev\simulations\src\gravsim\gravsim_window.c++
 
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.i"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\simulations\src\learning\opengl\opengl.c++ > CMakeFiles\grav_window_test.dir\src\learning\opengl\opengl.c++.i
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.i"
+	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\simulations\src\gravsim\gravsim_window.c++ > CMakeFiles\grav_window_test.dir\src\gravsim\gravsim_window.c++.i
 
-CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.s"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\simulations\src\learning\opengl\opengl.c++ -o CMakeFiles\grav_window_test.dir\src\learning\opengl\opengl.c++.s
+CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.s"
+	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\simulations\src\gravsim\gravsim_window.c++ -o CMakeFiles\grav_window_test.dir\src\gravsim\gravsim_window.c++.s
 
 CMakeFiles/grav_window_test.dir/src/glad.c.obj: CMakeFiles/grav_window_test.dir/flags.make
 CMakeFiles/grav_window_test.dir/src/glad.c.obj: CMakeFiles/grav_window_test.dir/includes_C.rsp
@@ -103,13 +103,13 @@ CMakeFiles/grav_window_test.dir/src/glad.c.s: cmake_force
 
 # Object files for target grav_window_test
 grav_window_test_OBJECTS = \
-"CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj" \
+"CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj" \
 "CMakeFiles/grav_window_test.dir/src/glad.c.obj"
 
 # External object files for target grav_window_test
 grav_window_test_EXTERNAL_OBJECTS =
 
-grav_window_test.exe: CMakeFiles/grav_window_test.dir/src/learning/opengl/opengl.c++.obj
+grav_window_test.exe: CMakeFiles/grav_window_test.dir/src/gravsim/gravsim_window.c++.obj
 grav_window_test.exe: CMakeFiles/grav_window_test.dir/src/glad.c.obj
 grav_window_test.exe: CMakeFiles/grav_window_test.dir/build.make
 grav_window_test.exe: E:/dev/glfw/lib-mingw-w64/libglfw3.a
