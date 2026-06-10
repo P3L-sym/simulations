@@ -146,10 +146,10 @@ int main() {
         else if (key == GLFW_KEY_3) { focusIndex = 2; }
         else if (key == GLFW_KEY_4) { focusIndex = 3; }
         else if (key == GLFW_KEY_5) { focusIndex = 5; }
-        else if (key == GLFW_KEY_6) { focusIndex = 7; }
-        else if (key == GLFW_KEY_7) { focusIndex = 8; }
-        else if (key == GLFW_KEY_8) { focusIndex = 9; }
-        else if (key == GLFW_KEY_9) { focusIndex = 10; }
+        else if (key == GLFW_KEY_6) { focusIndex = 8; }
+        else if (key == GLFW_KEY_7) { focusIndex = 9; }
+        else if (key == GLFW_KEY_8) { focusIndex = 10; }
+        else if (key == GLFW_KEY_9) { focusIndex = 11; }
         else if (key == GLFW_KEY_0) { focusIndex = -1; }
     });
 
@@ -160,6 +160,7 @@ int main() {
     const double Moon_Mass = 7.342e22;
     const double Mars_Mass = 6.390e23; 
     const double Phobos_Mass = 1.0659e16;
+    const double Deimos_Mass = 1.475e15;
     const double Jupiter_Mass = 1.898e27;
     const double Saturn_Mass = 5.683e26;
     const double Uranus_Mass = 8.681e25;
@@ -167,6 +168,7 @@ int main() {
 
     const double M_Earth = std::sqrt(G * Earth_Mass / 3.844e8); 
     const double P_Mars = std::sqrt(G * Mars_Mass / 9.376e6);
+    const double D_Mars = std::sqrt(G * Mars_Mass / 2.346e7);
 
     std::vector<Body> bodies = {
         Body({ 0.0, 0.0 }, { 0.0, 0.0 }, Sun_Mass, 15.0f, 1.00f, 0.90f, 0.20f),                                   // Sun       0
@@ -176,10 +178,11 @@ int main() {
         Body({ 1.496e11 + 3.844e8, 0.0 }, { 0.0, 29800.0 + M_Earth }, Moon_Mass, 3.0f, 0.70f, 0.70f, 0.70f),      // Moon      4
         Body({ 2.279e11, 0.0 }, { 0.0, 24077.0 }, Mars_Mass, 4.0f, 0.78f, 0.35f, 0.18f),                          // Mars      5
         Body({ 2.279e11 + 9.376e6, 0.0 }, { 0.0, 24077.0 + P_Mars }, Phobos_Mass, 1.5f, 0.55f, 0.50f, 0.45f),     //Phobos     6
-        Body({ 7.783e11, 0.0 }, { 0.0, 13070.0 }, Jupiter_Mass, 10.0f, 0.80f, 0.60f, 0.40f),                      // Jupiter   7
-        Body({ 1.427e12, 0.0 }, { 0.0, 9690.0 }, Saturn_Mass, 9.0f, 0.90f, 0.80f, 0.50f),                         // Saturn    8 
-        Body({ 2.871e12, 0.0 }, { 0.0, 6810.0 }, Uranus_Mass, 7.0f, 0.40f, 0.80f, 0.90f),                         // Uranus    9
-        Body({ 4.495e12, 0.0 }, { 0.0, 5430.0 }, Neptune_Mass, 7.0f, 0.20f, 0.40f, 0.90f),                        // Neptune   10
+        Body({ 2.279e11 + 2.346e7, 0.0 }, { 0.0, 24077.0 + D_Mars }, Deimos_Mass, 1.5f, 0.55f, 0.50f, 0.45f),     //Deimos     7
+        Body({ 7.783e11, 0.0 }, { 0.0, 13070.0 }, Jupiter_Mass, 10.0f, 0.80f, 0.60f, 0.40f),                      // Jupiter   8
+        Body({ 1.427e12, 0.0 }, { 0.0, 9690.0 }, Saturn_Mass, 9.0f, 0.90f, 0.80f, 0.50f),                         // Saturn    9 
+        Body({ 2.871e12, 0.0 }, { 0.0, 6810.0 }, Uranus_Mass, 7.0f, 0.40f, 0.80f, 0.90f),                         // Uranus    10
+        Body({ 4.495e12, 0.0 }, { 0.0, 5430.0 }, Neptune_Mass, 7.0f, 0.20f, 0.40f, 0.90f),                        // Neptune   11
     };
 
     for (int i = 0; i < (int)bodies.size(); ++i)
