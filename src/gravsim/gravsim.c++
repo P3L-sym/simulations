@@ -6,7 +6,7 @@
 const int    SCR_W = 800;
 const int    SCR_H = 600;
 const double G = 6.674e-11;
-const double softening = 1e5;
+const double softening = 0.0;
 const double scale = 1.5e-9;
 const double time_scale = 3.0e5;
 bool paused = false;
