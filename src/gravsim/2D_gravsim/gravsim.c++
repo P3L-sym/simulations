@@ -2,9 +2,12 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <deque>
 
-const int    SCR_W = 800;
-const int    SCR_H = 600;
+const int SCR_W = 800;
+const int SCR_H = 600;
+const int trail_length = 3600;
+const int sub_steps = 10;
 const double G = 6.674e-11;
 const double softening = 0.0;
 const double scale = 1.5e-9;
@@ -59,6 +62,22 @@ struct Body {
         }
         glEnd();
     }
+
+    std::deque<Vec2> trail;
+
+    void drawTrail(const Camera& cam) const {
+        if(trail.size() < 2) return;
+        glBegin(GL_LINE_STRIP);
+        for(int i = 0; i < (int)trail.size(); ++i) {
+            float t = (float)i / (float)(trail.size() - 1);
+            float alpha = t * t;
+            glColor4f(r, g, b, alpha * 0.75);
+            float sx = (float)(trail[i].x * scale * cam.zoom) + SCR_W * 0.5f + (float)cam.offsetX;
+            float sy = (float)(trail[i].y * scale * cam.zoom) + SCR_H * 0.5f + (float)cam.offsetY;
+            glVertex2f(sx, sy);
+        }
+        glEnd();
+    }
 };
 
 Vec2 accelFrom(const Body& a, const Body& b) {
@@ -100,6 +119,10 @@ int main() {
     glfwSwapInterval(1);
 
     glMatrixMode(GL_PROJECTION); glLoadIdentity();
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
     glOrtho(0, SCR_W, SCR_H, 0, -1, 1);
     glMatrixMode(GL_MODELVIEW);  glLoadIdentity();
 
@@ -196,8 +219,16 @@ int main() {
         double simDt = (now - lastTime) * time_scale;
         lastTime = now;
 
-        if(!paused)
-            integrate(bodies, simDt);
+        if(!paused){
+            double subDt = simDt / sub_steps;
+            for(int s = 0; s < sub_steps; ++s)
+                integrate(bodies, subDt);
+            for(auto& b : bodies){
+                b.trail.push_back(b.pos);
+                if((int)b.trail.size() > trail_length)
+                    b.trail.pop_front();
+            }
+        }
 
         if (focusIndex >= 0 && focusIndex < (int)bodies.size()) {
             camera.offsetX = -(bodies[focusIndex].pos.x * scale * camera.zoom);
@@ -205,6 +236,7 @@ int main() {
         }
 
         glClear(GL_COLOR_BUFFER_BIT);
+        for (auto& b : bodies) b.drawTrail(camera);
         for (auto& b : bodies) b.draw(camera);
         glfwSwapBuffers(window);
         glfwPollEvents();
