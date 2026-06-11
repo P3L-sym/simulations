@@ -1,8 +1,8 @@
 #include "gravsim_window.h"
 #include <iostream>
 
-bool paused     = false;
-int  focusIndex = -1;
+bool paused = false;
+int focusIndex = -1;
 
 GLFWwindow* StartGLFW() {
     if (!glfwInit()) {
@@ -24,7 +24,7 @@ void SetupOpenGL() {
 
 void SetupWindowCallbacks(GLFWwindow* window) {
     glfwSetKeyCallback(window, [](GLFWwindow*, int key, int, int action, int) {
-        if      (key == GLFW_KEY_SPACE && action == GLFW_PRESS) paused = !paused;
+        if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) paused = !paused;
         else if (key == GLFW_KEY_1) focusIndex = 0;   // Sun
         else if (key == GLFW_KEY_2) focusIndex = 1;   // Mercury
         else if (key == GLFW_KEY_3) focusIndex = 2;   // Venus

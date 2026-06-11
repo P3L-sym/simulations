@@ -3,9 +3,9 @@
 #include <cmath>
 
 Vec2 accelFrom(const Body& a, const Body& b) {
-    Vec2   delta  = b.pos - a.pos;
-    double dist2  = delta.dot(delta) + (softening * softening);
-    double dist   = std::sqrt(dist2);
+    Vec2 delta  = b.pos - a.pos;
+    double dist2 = delta.dot(delta) + (softening * softening);
+    double dist = std::sqrt(dist2);
     double factor = G * b.mass / (dist2 * dist);
     return delta * factor;
 }
@@ -20,6 +20,6 @@ void integrate(std::vector<Body>& bodies, double dt) {
             if (i != j) newAcc += accelFrom(bodies[i], bodies[j]);
 
         bodies[i].vel += (bodies[i].acc + newAcc) * (0.5 * dt);
-        bodies[i].acc  = newAcc;
+        bodies[i].acc = newAcc;
     }
 }

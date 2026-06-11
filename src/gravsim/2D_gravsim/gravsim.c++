@@ -32,8 +32,8 @@ int main() {
     const double Neptune_Mass = 1.024e26;
 
     const double M_Earth = std::sqrt(G * Earth_Mass / 3.844e8);   // Moon
-    const double P_Mars = std::sqrt(G * Mars_Mass  / 9.376e6);    // Phobos
-    const double D_Mars = std::sqrt(G * Mars_Mass  / 2.346e7);    // Deimos
+    const double P_Mars = std::sqrt(G * Mars_Mass / 9.376e6);    // Phobos
+    const double D_Mars = std::sqrt(G * Mars_Mass / 2.346e7);    // Deimos
 
     std::vector<Body> bodies = {
         Body({ 0.0, 0.0 }, { 0.0, 0.0 }, Sun_Mass, 15.0f, 1.00f, 0.90f, 0.20f),                                 // 0  Sun

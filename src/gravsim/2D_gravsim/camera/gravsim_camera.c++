@@ -30,8 +30,8 @@ void RegisterCameraCallbacks(GLFWwindow* window, Camera& camera) {
     glfwSetCursorPosCallback(window, [](GLFWwindow* w, double x, double y) {
         auto* cam = static_cast<Camera*>(glfwGetWindowUserPointer(w));
         if (!cam->dragging) return;
-        cam->offsetX   += x - cam->lastMouseX;
-        cam->offsetY   += y - cam->lastMouseY;
+        cam->offsetX += x - cam->lastMouseX;
+        cam->offsetY += y - cam->lastMouseY;
         cam->lastMouseX = x;
         cam->lastMouseY = y;
     });
