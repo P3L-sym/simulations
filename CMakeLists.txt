@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.16)
 project(grav_window VERSION 1.0.0)
 
 cmake_policy(SET CMP0072 NEW)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set( _glfw3_HEADER_SEARCH_DIRS
     "/usr/include"
@@ -40,7 +42,11 @@ find_package(OpenGL REQUIRED)
 
 add_executable(
     grav_window
-    src/gravsim/gravsim.c++
+    src/gravsim/2D_gravsim/gravsim.c++
+    src/gravsim/2D_gravsim/window/gravsim_window.c++
+    src/gravsim/2D_gravsim/camera/gravsim_camera.c++
+    src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++
+    src/gravsim/2D_gravsim/physics/gravsim_physics.c++
     src/glad.c
 )
 
@@ -50,6 +56,7 @@ target_include_directories(
     dependencies
     ${GLFW3_INCLUDE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
+    src/gravsim/2D_gravsim
 )
 
 target_link_libraries(
