@@ -29,7 +29,7 @@ void Body::drawTrail(const Camera& cam) const {
 
     glBegin(GL_LINE_STRIP);
     for (int i = 0; i < (int)trail.size(); ++i) {
-        float t     = (float)i / (float)(trail.size() - 1);
+        float t = (float)i / (float)(trail.size() - 1);
         float alpha = t * t;
         glColor4f(r, g, b, alpha * 0.75f);
         float sx = (float)(trail[i].x * scale * cam.zoom) + SCR_W * 0.5f + (float)cam.offsetX;

@@ -54,22 +54,31 @@ int main() {
         for (int j = 0; j < (int)bodies.size(); ++j)
             if (i != j) bodies[i].acc += accelFrom(bodies[i], bodies[j]);
 
+    double accumulator = 0.0;   
     double lastTime = glfwGetTime();
 
     while (!glfwWindowShouldClose(window)) {
-        double now   = glfwGetTime();
-        double simDt = (now - lastTime) * time_scale;
-        lastTime     = now;
+        double now = glfwGetTime();
+        double elapsed = now - lastTime;
+        lastTime = now;
+
+        if(elapsed > 0.25) elapsed = 0.25;
 
         if (!paused) {
-            double subDt = simDt / sub_steps;
-            for (int s = 0; s < sub_steps; ++s)
-                integrate(bodies, subDt);
+            accumulator += elapsed;
+            
+            while (accumulator >= fixed_real_dt) {
+                const double sub_dt = (fixed_real_dt * speed_multiplier) / sub_steps;
 
-            for (auto& b : bodies) {
-                b.trail.push_back(b.pos);
-                if ((int)b.trail.size() > trail_length)
-                    b.trail.pop_front();
+                for (int s = 0; s < sub_steps; ++s)
+                    integrate(bodies, sub_dt);
+
+                for (auto& b : bodies) {
+                    b.trail.push_back(b.pos);
+                    if ((int)b.trail.size() > trail_length)
+                        b.trail.pop_front();
+                }
+                accumulator -= fixed_real_dt;
             }
         }
 

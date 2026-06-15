@@ -5,7 +5,7 @@ struct Camera {
     double offsetX = 0;
     double offsetY = 0;
     double zoom = 1.0;
-    bool   dragging = false;
+    bool dragging = false;
     double lastMouseX = 0;
     double lastMouseY = 0;
 };

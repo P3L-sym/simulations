@@ -3,6 +3,7 @@
 
 bool paused = false;
 int focusIndex = -1;
+double speed_multiplier = 1.0;
 
 GLFWwindow* StartGLFW() {
     if (!glfwInit()) {
@@ -24,6 +25,8 @@ void SetupOpenGL() {
 
 void SetupWindowCallbacks(GLFWwindow* window) {
     glfwSetKeyCallback(window, [](GLFWwindow*, int key, int, int action, int) {
+        if (action != GLFW_PRESS) return;
+
         if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) paused = !paused;
         else if (key == GLFW_KEY_1) focusIndex = 0;   // Sun
         else if (key == GLFW_KEY_2) focusIndex = 1;   // Mercury
@@ -35,5 +38,16 @@ void SetupWindowCallbacks(GLFWwindow* window) {
         else if (key == GLFW_KEY_8) focusIndex = 10;  // Uranus
         else if (key == GLFW_KEY_9) focusIndex = 11;  // Neptune
         else if (key == GLFW_KEY_0) focusIndex = -1;  // Free camera
+
+        else if (key == GLFW_KEY_RIGHT_BRACKET) {
+            speed_multiplier *= 2.0;
+            if (speed_multiplier < 1.0 * 64.0) speed_multiplier = 1.0 * 64.0;
+            std::cout << "Speed: " << speed_multiplier <<  "x\n";
+        }
+        else if (key == GLFW_KEY_LEFT_BRACKET) {
+            speed_multiplier /= 2.0;
+            if (speed_multiplier < 1.0 / 64.0 ) speed_multiplier = 1.0 / 64.0;
+            std::cout << "Speed: " << speed_multiplier <<  "x\n";
+        }
     });
 }

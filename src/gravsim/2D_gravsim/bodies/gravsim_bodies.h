@@ -9,9 +9,9 @@ struct Vec2 {
     Vec2() = default;
     Vec2(double x, double y) : x(x), y(y) {}
 
-    Vec2  operator+ (Vec2 o) const { return {x + o.x, y + o.y}; }
-    Vec2  operator- (Vec2 o) const { return {x - o.x, y - o.y}; }
-    Vec2  operator* (double s) const { return {x * s,  y * s  }; }
+    Vec2 operator+ (Vec2 o) const { return {x + o.x, y + o.y}; }
+    Vec2 operator- (Vec2 o) const { return {x - o.x, y - o.y}; }
+    Vec2 operator* (double s) const { return {x * s,  y * s  }; }
     Vec2& operator+=(Vec2 o) { x += o.x; y += o.y; return *this; }
 
     double dot(Vec2 o) const { return x * o.x + y * o.y; }
