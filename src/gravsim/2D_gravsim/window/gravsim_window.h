@@ -8,10 +8,7 @@ inline constexpr int sub_steps = 10;
 inline constexpr double G = 6.674e-11;
 inline constexpr double softening = 0.0;
 inline constexpr double scale = 1.5e-9;
-// inline constexpr double time_scale = 3.0e5;
 inline constexpr double fixed_real_dt = 1.0 / 120.0;
-// inline constexpr double fixed_sim_dt = fixed_real_dt * time_scale;
-// inline constexpr double sub_dt = fixed_sim_dt / sub_steps;
 
 extern double speed_multiplier;
 extern bool paused;
