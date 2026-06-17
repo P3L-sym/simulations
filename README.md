@@ -52,14 +52,34 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 ```
 simulation/
 │
-├── learning/                 # C++ basics and learning exercises
-│    └── notes/               # Learning notes and references
-├── projects/                 # C++ basics and learning projects
-└── gravsim/                  # C++ basics and learning projects
-      ├── single_orbit/       # First orbital simulation
-      ├── two_body/           # Earth-Moon system
-      ├── solar_system/       # Full solar system n-body sim
-      └── visualisation/      # Graphical rendering
+├── cmake/                        # CMake configuration modules
+├── dependencies/                 # External libraries and dependencies
+├── src/
+│    └── gravsim/
+│         ├── 2D_gravsim/         # 2D n-body gravity simulation
+│         │    ├── bodies/        # Body struct — mass, position, velocity, acceleration
+│         │    ├── camera/        # Pan, zoom and focus controls
+│         │    ├── physics/       # Integrator and force calculations
+│         │    └── window/        # GLFW window creation and input callbacks
+│         └── 3D_gravsim/         # 3D n-body gravity simulation (planned)
+│
+├── learning/                     # C++ concepts and language fundamentals
+│    ├── learn/                   # Topic exercises — syntax, patterns, and idioms
+│    │    ├── arrays/
+│    │    ├── basics/
+│    │    ├── enums/
+│    │    ├── functions/
+│    │    ├── inheritance/
+│    │    ├── loops/
+│    │    ├── pointers/
+│    │    ├── recursion/
+│    │    ├── structs/
+│    │    └── templates/
+│    └── projects/                # Small self-contained practice projects
+│
+├── glad.c                        # OpenGL loader
+├── CMakeLists.txt                # Root build configuration
+└── README.md
 ```
 
 ---
@@ -97,6 +117,11 @@ Resources I'm using along the way:
 | #003 | Completed all of the C++ basics and OOP | I completed the C++ course that I was doing and am now ready to start moving on to learning how to make a opengl window and render planets and move on to the gravity sim  |
 | #004 | Made a Window | I created a window wile using OpenGl |
 | #005 | Generated a 2D object | I generated a 2D object and added some garavity(that is abit broken still) |
+| #006 | Generated 2 2D objects with gravity | I created 2 objects with the data from the sun and the earth and simulated gravity with those 2 bodies |
+| #007 | Solar System | I added all of the 8 planets in out solar system and i added the moon aswel |
+| #008 | Mars Moons | I added the 2 Moons that orbit Mars |
+| #009 | Jupiter Moons | I added 8 of Jupiters Moons |
+| #010 | Saturns Moons | I added 13 of Saturns Moons |
 
 *This table will grow with each simulation and milestone.*
 
