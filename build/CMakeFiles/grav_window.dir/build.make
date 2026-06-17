@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\dev\cmake\bin\cmake.exe
+CMAKE_COMMAND = C:\dev\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\dev\cmake\bin\cmake.exe -E rm -f
+RM = C:\dev\cmake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\dev\simulations
+CMAKE_SOURCE_DIR = C:\dev\simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\dev\simulations\build
+CMAKE_BINARY_DIR = C:\dev\simulation\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/grav_window.dir/depend.make
@@ -71,52 +71,137 @@ include CMakeFiles/grav_window.dir/flags.make
 CMakeFiles/grav_window.dir/codegen:
 .PHONY : CMakeFiles/grav_window.dir/codegen
 
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/flags.make
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj: E:/dev/simulations/src/gravsim/gravsim.c++
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\dev\simulations\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\gravsim.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\gravsim.c++.obj -c E:\dev\simulations\src\gravsim\gravsim.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/gravsim.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\gravsim.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\gravsim.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\gravsim.c++
 
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.i"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\simulations\src\gravsim\gravsim.c++ > CMakeFiles\grav_window.dir\src\gravsim\gravsim.c++.i
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\gravsim.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\gravsim.c++.i
 
-CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.s"
-	E:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\simulations\src\gravsim\gravsim.c++ -o CMakeFiles\grav_window.dir\src\gravsim\gravsim.c++.s
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\gravsim.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\gravsim.c++.s
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/window/gravsim_window.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\window\gravsim_window.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\window\gravsim_window.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\window\gravsim_window.c++
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\window\gravsim_window.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\window\gravsim_window.c++.i
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\window\gravsim_window.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\window\gravsim_window.c++.s
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/camera/gravsim_camera.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\camera\gravsim_camera.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\camera\gravsim_camera.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\camera\gravsim_camera.c++
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\camera\gravsim_camera.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\camera\gravsim_camera.c++.i
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\camera\gravsim_camera.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\camera\gravsim_camera.c++.s
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++.i
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\bodies\gravsim_bodies.c++.s
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/physics/gravsim_physics.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\physics\gravsim_physics.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\physics\gravsim_physics.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\physics\gravsim_physics.c++
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\physics\gravsim_physics.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\physics\gravsim_physics.c++.i
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\physics\gravsim_physics.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\physics\gravsim_physics.c++.s
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj: CMakeFiles/grav_window.dir/flags.make
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj: CMakeFiles/grav_window.dir/includes_CXX.rsp
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj: C:/dev/simulation/src/gravsim/2D_gravsim/compute/gravsim_compute.c++
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj -MF CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\compute\gravsim_compute.c++.obj.d -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\compute\gravsim_compute.c++.obj -c C:\dev\simulation\src\gravsim\2D_gravsim\compute\gravsim_compute.c++
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\simulation\src\gravsim\2D_gravsim\compute\gravsim_compute.c++ > CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\compute\gravsim_compute.c++.i
+
+CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\simulation\src\gravsim\2D_gravsim\compute\gravsim_compute.c++ -o CMakeFiles\grav_window.dir\src\gravsim\2D_gravsim\compute\gravsim_compute.c++.s
 
 CMakeFiles/grav_window.dir/src/glad.c.obj: CMakeFiles/grav_window.dir/flags.make
 CMakeFiles/grav_window.dir/src/glad.c.obj: CMakeFiles/grav_window.dir/includes_C.rsp
-CMakeFiles/grav_window.dir/src/glad.c.obj: E:/dev/simulations/src/glad.c
+CMakeFiles/grav_window.dir/src/glad.c.obj: C:/dev/simulation/src/glad.c
 CMakeFiles/grav_window.dir/src/glad.c.obj: CMakeFiles/grav_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\dev\simulations\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/grav_window.dir/src/glad.c.obj"
-	E:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/glad.c.obj -MF CMakeFiles\grav_window.dir\src\glad.c.obj.d -o CMakeFiles\grav_window.dir\src\glad.c.obj -c E:\dev\simulations\src\glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/grav_window.dir/src/glad.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/grav_window.dir/src/glad.c.obj -MF CMakeFiles\grav_window.dir\src\glad.c.obj.d -o CMakeFiles\grav_window.dir\src\glad.c.obj -c C:\dev\simulation\src\glad.c
 
 CMakeFiles/grav_window.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/grav_window.dir/src/glad.c.i"
-	E:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\dev\simulations\src\glad.c > CMakeFiles\grav_window.dir\src\glad.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\dev\simulation\src\glad.c > CMakeFiles\grav_window.dir\src\glad.c.i
 
 CMakeFiles/grav_window.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/grav_window.dir/src/glad.c.s"
-	E:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\dev\simulations\src\glad.c -o CMakeFiles\grav_window.dir\src\glad.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\dev\simulation\src\glad.c -o CMakeFiles\grav_window.dir\src\glad.c.s
 
 # Object files for target grav_window
 grav_window_OBJECTS = \
-"CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj" \
+"CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj" \
 "CMakeFiles/grav_window.dir/src/glad.c.obj"
 
 # External object files for target grav_window
 grav_window_EXTERNAL_OBJECTS =
 
-grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj
+grav_window.exe: CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj
 grav_window.exe: CMakeFiles/grav_window.dir/src/glad.c.obj
 grav_window.exe: CMakeFiles/grav_window.dir/build.make
-grav_window.exe: E:/dev/glfw/lib-mingw-w64/libglfw3.a
+grav_window.exe: C:/dev/glfw/lib-mingw-w64/libglfw3.a
 grav_window.exe: CMakeFiles/grav_window.dir/linkLibs.rsp
 grav_window.exe: CMakeFiles/grav_window.dir/objects1.rsp
 grav_window.exe: CMakeFiles/grav_window.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\dev\simulations\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable grav_window.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\dev\simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable grav_window.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\grav_window.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +213,6 @@ CMakeFiles/grav_window.dir/clean:
 .PHONY : CMakeFiles/grav_window.dir/clean
 
 CMakeFiles/grav_window.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\dev\simulations E:\dev\simulations E:\dev\simulations\build E:\dev\simulations\build E:\dev\simulations\build\CMakeFiles\grav_window.dir\DependInfo.cmake "--color=$(COLOR)" grav_window
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\dev\simulation C:\dev\simulation C:\dev\simulation\build C:\dev\simulation\build C:\dev\simulation\build\CMakeFiles\grav_window.dir\DependInfo.cmake "--color=$(COLOR)" grav_window
 .PHONY : CMakeFiles/grav_window.dir/depend
 

@@ -1,14 +1,44 @@
 [
 {
-  "directory": "E:/dev/simulations/build",
-  "command": "E:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -o CMakeFiles\\grav_window.dir\\src\\gravsim\\gravsim.c++.obj -c E:\\dev\\simulations\\src\\gravsim\\gravsim.c++",
-  "file": "E:/dev/simulations/src/gravsim/gravsim.c++",
-  "output": "CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj"
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\gravsim.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\gravsim.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/gravsim.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj"
 },
 {
-  "directory": "E:/dev/simulations/build",
-  "command": "E:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/grav_window.dir/includes_C.rsp -g -o CMakeFiles\\grav_window.dir\\src\\glad.c.obj -c E:\\dev\\simulations\\src\\glad.c",
-  "file": "E:/dev/simulations/src/glad.c",
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\window\\gravsim_window.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\window\\gravsim_window.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/window/gravsim_window.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj"
+},
+{
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\camera\\gravsim_camera.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\camera\\gravsim_camera.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/camera/gravsim_camera.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj"
+},
+{
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\bodies\\gravsim_bodies.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\bodies\\gravsim_bodies.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj"
+},
+{
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\physics\\gravsim_physics.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\physics\\gravsim_physics.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/physics/gravsim_physics.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj"
+},
+{
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/grav_window.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\grav_window.dir\\src\\gravsim\\2D_gravsim\\compute\\gravsim_compute.c++.obj -c C:\\dev\\simulation\\src\\gravsim\\2D_gravsim\\compute\\gravsim_compute.c++",
+  "file": "C:/dev/simulation/src/gravsim/2D_gravsim/compute/gravsim_compute.c++",
+  "output": "CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj"
+},
+{
+  "directory": "C:/dev/simulation/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/grav_window.dir/includes_C.rsp -g -o CMakeFiles\\grav_window.dir\\src\\glad.c.obj -c C:\\dev\\simulation\\src\\glad.c",
+  "file": "C:/dev/simulation/src/glad.c",
   "output": "CMakeFiles/grav_window.dir/src/glad.c.obj"
 }
 ]

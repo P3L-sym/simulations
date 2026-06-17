@@ -10,10 +10,18 @@ GLFWwindow* StartGLFW() {
         std::cerr << "Failed to initialize GLFW\n";
         return nullptr;
     }
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
+
     return glfwCreateWindow(SCR_W, SCR_H, "gravsim", nullptr, nullptr);
 }
 
 void SetupOpenGL() {
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))  // ← replaces glewInit
+        std::cerr << "Failed to initialise GLAD\n";
+    
     glMatrixMode(GL_PROJECTION); glLoadIdentity();
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

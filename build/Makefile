@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\dev\cmake\bin\cmake.exe
+CMAKE_COMMAND = C:\dev\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\dev\cmake\bin\cmake.exe -E rm -f
+RM = C:\dev\cmake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\dev\simulations
+CMAKE_SOURCE_DIR = C:\dev\simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\dev\simulations\build
+CMAKE_BINARY_DIR = C:\dev\simulation\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = E:\dev\simulations\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	E:\dev\cmake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\dev\cmake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	E:\dev\cmake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\dev\cmake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\dev\simulations\build\CMakeFiles E:\dev\simulations\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\simulation\build\CMakeFiles C:\dev\simulation\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\dev\simulations\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\simulation\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,29 +152,149 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
-src/gravsim/gravsim.obj: src/gravsim/gravsim.c++.obj
-.PHONY : src/gravsim/gravsim.obj
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.obj: src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.obj
 
 # target to build an object file
-src/gravsim/gravsim.c++.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.obj
-.PHONY : src/gravsim/gravsim.c++.obj
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj
 
-src/gravsim/gravsim.i: src/gravsim/gravsim.c++.i
-.PHONY : src/gravsim/gravsim.i
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.i: src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.i
 
 # target to preprocess a source file
-src/gravsim/gravsim.c++.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.i
-.PHONY : src/gravsim/gravsim.c++.i
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.i
 
-src/gravsim/gravsim.s: src/gravsim/gravsim.c++.s
-.PHONY : src/gravsim/gravsim.s
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.s: src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.s
 
 # target to generate assembly for a file
-src/gravsim/gravsim.c++.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/gravsim.c++.s
-.PHONY : src/gravsim/gravsim.c++.s
+src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s
+.PHONY : src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.s
+
+src/gravsim/2D_gravsim/camera/gravsim_camera.obj: src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.obj
+
+# target to build an object file
+src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.c++.obj
+
+src/gravsim/2D_gravsim/camera/gravsim_camera.i: src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.i
+
+# target to preprocess a source file
+src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.c++.i
+
+src/gravsim/2D_gravsim/camera/gravsim_camera.s: src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.s
+
+# target to generate assembly for a file
+src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s
+.PHONY : src/gravsim/2D_gravsim/camera/gravsim_camera.c++.s
+
+src/gravsim/2D_gravsim/compute/gravsim_compute.obj: src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.obj
+
+# target to build an object file
+src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.c++.obj
+
+src/gravsim/2D_gravsim/compute/gravsim_compute.i: src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.i
+
+# target to preprocess a source file
+src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.c++.i
+
+src/gravsim/2D_gravsim/compute/gravsim_compute.s: src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.s
+
+# target to generate assembly for a file
+src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s
+.PHONY : src/gravsim/2D_gravsim/compute/gravsim_compute.c++.s
+
+src/gravsim/2D_gravsim/gravsim.obj: src/gravsim/2D_gravsim/gravsim.c++.obj
+.PHONY : src/gravsim/2D_gravsim/gravsim.obj
+
+# target to build an object file
+src/gravsim/2D_gravsim/gravsim.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj
+.PHONY : src/gravsim/2D_gravsim/gravsim.c++.obj
+
+src/gravsim/2D_gravsim/gravsim.i: src/gravsim/2D_gravsim/gravsim.c++.i
+.PHONY : src/gravsim/2D_gravsim/gravsim.i
+
+# target to preprocess a source file
+src/gravsim/2D_gravsim/gravsim.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.i
+.PHONY : src/gravsim/2D_gravsim/gravsim.c++.i
+
+src/gravsim/2D_gravsim/gravsim.s: src/gravsim/2D_gravsim/gravsim.c++.s
+.PHONY : src/gravsim/2D_gravsim/gravsim.s
+
+# target to generate assembly for a file
+src/gravsim/2D_gravsim/gravsim.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.s
+.PHONY : src/gravsim/2D_gravsim/gravsim.c++.s
+
+src/gravsim/2D_gravsim/physics/gravsim_physics.obj: src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.obj
+
+# target to build an object file
+src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.c++.obj
+
+src/gravsim/2D_gravsim/physics/gravsim_physics.i: src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.i
+
+# target to preprocess a source file
+src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.c++.i
+
+src/gravsim/2D_gravsim/physics/gravsim_physics.s: src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.s
+
+# target to generate assembly for a file
+src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s
+.PHONY : src/gravsim/2D_gravsim/physics/gravsim_physics.c++.s
+
+src/gravsim/2D_gravsim/window/gravsim_window.obj: src/gravsim/2D_gravsim/window/gravsim_window.c++.obj
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.obj
+
+# target to build an object file
+src/gravsim/2D_gravsim/window/gravsim_window.c++.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.obj
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.c++.obj
+
+src/gravsim/2D_gravsim/window/gravsim_window.i: src/gravsim/2D_gravsim/window/gravsim_window.c++.i
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.i
+
+# target to preprocess a source file
+src/gravsim/2D_gravsim/window/gravsim_window.c++.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.i
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.c++.i
+
+src/gravsim/2D_gravsim/window/gravsim_window.s: src/gravsim/2D_gravsim/window/gravsim_window.c++.s
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.s
+
+# target to generate assembly for a file
+src/gravsim/2D_gravsim/window/gravsim_window.c++.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grav_window.dir\build.make CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/window/gravsim_window.c++.s
+.PHONY : src/gravsim/2D_gravsim/window/gravsim_window.c++.s
 
 # Help Target
 help:
@@ -188,9 +308,24 @@ help:
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
-	@echo ... src/gravsim/gravsim.obj
-	@echo ... src/gravsim/gravsim.i
-	@echo ... src/gravsim/gravsim.s
+	@echo ... src/gravsim/2D_gravsim/bodies/gravsim_bodies.obj
+	@echo ... src/gravsim/2D_gravsim/bodies/gravsim_bodies.i
+	@echo ... src/gravsim/2D_gravsim/bodies/gravsim_bodies.s
+	@echo ... src/gravsim/2D_gravsim/camera/gravsim_camera.obj
+	@echo ... src/gravsim/2D_gravsim/camera/gravsim_camera.i
+	@echo ... src/gravsim/2D_gravsim/camera/gravsim_camera.s
+	@echo ... src/gravsim/2D_gravsim/compute/gravsim_compute.obj
+	@echo ... src/gravsim/2D_gravsim/compute/gravsim_compute.i
+	@echo ... src/gravsim/2D_gravsim/compute/gravsim_compute.s
+	@echo ... src/gravsim/2D_gravsim/gravsim.obj
+	@echo ... src/gravsim/2D_gravsim/gravsim.i
+	@echo ... src/gravsim/2D_gravsim/gravsim.s
+	@echo ... src/gravsim/2D_gravsim/physics/gravsim_physics.obj
+	@echo ... src/gravsim/2D_gravsim/physics/gravsim_physics.i
+	@echo ... src/gravsim/2D_gravsim/physics/gravsim_physics.s
+	@echo ... src/gravsim/2D_gravsim/window/gravsim_window.obj
+	@echo ... src/gravsim/2D_gravsim/window/gravsim_window.i
+	@echo ... src/gravsim/2D_gravsim/window/gravsim_window.s
 .PHONY : help
 
 
