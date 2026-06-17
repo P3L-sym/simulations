@@ -165,7 +165,7 @@ int main() {
         Body({ x_saturn + r_titan, 0.0 }, { 0.0, v_saturn + v_titan }, Titan_Mass, 3.5f, 0.90f, 0.60f, 0.20f),                  // 28 Titan
         Body({ x_saturn + r_hyperion, 0.0 }, { 0.0, v_saturn + v_hyperion }, Hyperion_Mass, 1.5f, 0.70f, 0.65f, 0.58f),         // 29 Hyperion
         Body({ x_saturn + r_iapetus, 0.0 }, { 0.0, v_saturn + v_iapetus }, Iapetus_Mass, 2.0f, 0.60f, 0.58f, 0.55f),            // 30 Iapetus    
-        Body({ x_saturn + r_phoebe, 0.0 }, { 0.0, v_saturn - v_phoebe }, Phoebe_Mass, 2.0f, 0.60f, 0.58f, 0.55f),               // 31 Phoebe   
+        Body({ x_saturn + r_phoebe, 0.0 }, { 0.0, v_saturn - v_phoebe }, Phoebe_Mass, 2.0f, 1.0f, 0.40f, 0.38f, 0.36f),         // 31 Phoebe   
         Body({ x_uranus, 0.0 }, { 0.0, v_uranus }, Uranus_Mass, 7.0f, 0.40f, 0.80f, 0.90f),                                     // 32 Uranus
         Body({ x_neptune, 0.0 }, { 0.0, v_neptune }, Neptune_Mass, 7.0f, 0.20f, 0.40f, 0.90f),                                  // 33 Neptune
     };
