@@ -24,9 +24,10 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 
 ### Phase 2 — First Simulations
 - [X] Simulating 2D gravity
-- [ ] Simulating a single planet orbiting a star (Euler method)
+- [X] Simulating a single planet orbiting a star (Euler method)
+- [X] Simulating a Solar System
 - [ ] Plotting orbital paths to the console
-- [ ] Adding a second body — the Moon
+- [X] Adding a second body — the Moon
 
 ### Phase 3 — Physics Engine Basics
 - [ ] Implementing Newton's law of universal gravitation
@@ -39,9 +40,10 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [ ] Performance optimisation with the Barnes-Hut algorithm
 
 ### Phase 5 — Visualisation
-- [ ] Rendering simulations with a graphics library (SFML or OpenGL)
+- [X] Rendering simulations with a graphics library (SFML or OpenGL)
 - [ ] Real-time interactive simulation viewer
 - [ ] Recording and exporting simulation data
+- [ ] All of the above for the 3D simulation
 
 ---
 
