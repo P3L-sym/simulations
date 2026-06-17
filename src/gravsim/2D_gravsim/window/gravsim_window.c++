@@ -34,9 +34,9 @@ void SetupWindowCallbacks(GLFWwindow* window) {
         else if (key == GLFW_KEY_4) focusIndex = 3;   // Earth
         else if (key == GLFW_KEY_5) focusIndex = 5;   // Mars
         else if (key == GLFW_KEY_6) focusIndex = 8;   // Jupiter
-        else if (key == GLFW_KEY_7) focusIndex = 9;   // Saturn
-        else if (key == GLFW_KEY_8) focusIndex = 10;  // Uranus
-        else if (key == GLFW_KEY_9) focusIndex = 11;  // Neptune
+        else if (key == GLFW_KEY_7) focusIndex = 17;   // Saturn
+        else if (key == GLFW_KEY_8) focusIndex = 19;  // Uranus
+        else if (key == GLFW_KEY_9) focusIndex = 20;  // Neptune
         else if (key == GLFW_KEY_0) focusIndex = -1;  // Free camera
 
         else if (key == GLFW_KEY_RIGHT_BRACKET) {
