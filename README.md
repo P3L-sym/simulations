@@ -120,8 +120,10 @@ Resources I'm using along the way:
 | #006 | Generated 2 2D objects with gravity | I created 2 objects with the data from the sun and the earth and simulated gravity with those 2 bodies |
 | #007 | Solar System | I added all of the 8 planets in out solar system and i added the moon aswel |
 | #008 | Mars Moons | I added the 2 Moons that orbit Mars |
-| #009 | Jupiter Moons | I added 8 of Jupiters Moons |
-| #010 | Saturns Moons | I added 13 of Saturns Moons |
+| #009 | Jupiter Moons | I added 8 of Jupiters's Moons |
+| #010 | Saturns Moons | I added 13 of Saturns's Moons |
+| #011 | Uranus Moons | I added 5 of Uranus's Moons |
+| #012 | Neptune Moons | I added 8 of Neptune's Moons |
 
 *This table will grow with each simulation and milestone.*
 
