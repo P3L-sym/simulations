@@ -59,9 +59,15 @@ simulation/
 │         ├── 2D_gravsim/         # 2D n-body gravity simulation
 │         │    ├── bodies/        # Body struct — mass, position, velocity, acceleration
 │         │    ├── camera/        # Pan, zoom and focus controls
+│         │    ├── compute/       # GPU rendering
 │         │    ├── physics/       # Integrator and force calculations
 │         │    └── window/        # GLFW window creation and input callbacks
 │         └── 3D_gravsim/         # 3D n-body gravity simulation (planned)
+│              ├── bodies/        # Body struct — mass, position, velocity, acceleration
+│              ├── camera/        # Pan, zoom and focus controls
+│              ├── compute/       # GPU rendering
+│              ├── physics/       # Integrator and force calculations
+│              └── window/        # GLFW window creation and input callbacks
 │
 ├── learning/                     # C++ concepts and language fundamentals
 │    ├── learn/                   # Topic exercises — syntax, patterns, and idioms
