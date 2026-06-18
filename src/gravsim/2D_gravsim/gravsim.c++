@@ -11,7 +11,7 @@
 int main() {
     GLFWwindow* window = StartGLFW();
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1);
+    glfwSwapInterval(0);
 
     SetupOpenGL();  // GLAD is initialised inside here now
 
@@ -26,6 +26,7 @@ int main() {
     const double x_saturn = 1.427e12, v_saturn = 9690.0;
     const double x_uranus = 2.871e12, v_uranus = 6810.0;
     const double x_neptune = 4.495e12, v_neptune = 5430.0;
+    const double x_pluto = 5.906e12, v_pluto = 4743.0;
 
     // ────Celestial Bodies Masses────
     const double Sun_Mass = 1.989e30;
@@ -75,6 +76,8 @@ int main() {
     const double Proteus_Mass = 4.400e19;
     const double Triton_Mass = 2.139e22;
     const double Nereid_Mass = 3.100e19;
+    const double Pluto_Mass = 1.303e22;
+    const double Charon_Mass = 1.586e21;
 
     const double GM_earth = G * Earth_Mass;
     const double GM_mars = G * Mars_Mass;
@@ -82,6 +85,7 @@ int main() {
     const double GM_saturn = G * Saturn_Mass;
     const double GM_uranus = G * Uranus_Mass;
     const double GM_neptune = G * Neptune_Mass;
+    const double GM_pluto = G * Pluto_Mass;
 
     // ────Orbital Radii────
     // Earth
@@ -128,6 +132,8 @@ int main() {
     const double r_proteus = 1.1765e8;
     const double r_triton = 3.5476e8; // retrograde
     const double r_nereid = 5.5134e9;
+    // Pluto 
+    const double r_charon = 1.9591e7;
 
     // ────Orbital Velocities────
     // Earth
@@ -174,6 +180,8 @@ int main() {
     const double v_proteus = std::sqrt(GM_neptune / r_proteus);
     const double v_triton = std::sqrt(GM_neptune / r_triton);
     const double v_nereid = std::sqrt(GM_neptune / r_nereid);
+    // Pluto
+    const double v_charon = std::sqrt(GM_pluto / r_charon);
 
     std::vector<Body> bodies = {
         Body({ 0.0, 0.0 }, { 0.0, 0.0 }, Sun_Mass, 15.0f, 1.00f, 0.90f, 0.20f),                                                       // 0 Sun
@@ -223,6 +231,8 @@ int main() {
         Body({ x_neptune + r_proteus, 0.0 }, { 0.0, v_neptune + v_proteus }, Proteus_Mass, 1.5f, 0.45f, 0.50f, 0.60f),                // 44 Proteus
         Body({ x_neptune + r_triton, 0.0 }, { 0.0, v_neptune - v_triton }, Triton_Mass, 2.5f, 0.75f, 0.65f, 0.65f),                   // 45 Triton (Retrograde)
         Body({ x_neptune + r_nereid, 0.0 }, { 0.0, v_neptune + v_nereid }, Nereid_Mass, 1.0f, 0.48f, 0.53f, 0.60f),                   // 46 Nereid
+        Body({ x_pluto, 0.0 }, { 0.0, v_pluto }, Pluto_Mass, 2.5f, 0.80f, 0.70f, 0.60f),                                              // 47 Pluto
+        Body({ x_pluto + r_charon, 0.0 }, { 0.0, v_pluto + v_charon }, Charon_Mass, 2.0f, 0.65f, 0.63f, 0.60f),                       // 48 Charon
     };
 
     // ── GPU setup ────────────────────────────────────────────────────────────

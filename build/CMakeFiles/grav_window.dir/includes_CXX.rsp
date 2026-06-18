@@ -1,1 +1,1 @@
--IC:/dev/simulation/dependencies -IC:/dev/glfw/include -IC:/dev/simulation -IC:/dev/simulation/src/gravsim/2D_gravsim
+-IE:/dev/simulations/dependencies -IE:/dev/glfw/include -IE:/dev/simulations -IE:/dev/simulations/src/gravsim/2D_gravsim

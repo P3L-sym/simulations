@@ -71,19 +71,19 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation/dependencies"
+					"path" : "E:/dev/simulations/dependencies"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/glfw/include"
+					"path" : "E:/dev/glfw/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation"
+					"path" : "E:/dev/simulations"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation/src/gravsim/2D_gravsim"
+					"path" : "E:/dev/simulations/src/gravsim/2D_gravsim"
 				}
 			],
 			"language" : "CXX",
@@ -116,19 +116,19 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation/dependencies"
+					"path" : "E:/dev/simulations/dependencies"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/glfw/include"
+					"path" : "E:/dev/glfw/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation"
+					"path" : "E:/dev/simulations"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/dev/simulation/src/gravsim/2D_gravsim"
+					"path" : "E:/dev/simulations/src/gravsim/2D_gravsim"
 				}
 			],
 			"language" : "C",
@@ -149,7 +149,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\dev\\glfw\\lib-mingw-w64\\libglfw3.a",
+				"fragment" : "E:\\dev\\glfw\\lib-mingw-w64\\libglfw3.a",
 				"role" : "libraries"
 			},
 			{
@@ -183,7 +183,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"fragment" : "C:/dev/glfw/lib-mingw-w64/libglfw3.a"
+			"fragment" : "E:/dev/glfw/lib-mingw-w64/libglfw3.a"
 		},
 		{
 			"backtrace" : 2,

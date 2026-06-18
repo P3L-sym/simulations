@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/dev/simulation/build/cmake_install.cmake"
+		"E:/dev/simulations/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
