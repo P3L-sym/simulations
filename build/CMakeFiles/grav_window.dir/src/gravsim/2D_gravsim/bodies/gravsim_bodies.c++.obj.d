@@ -91,4 +91,10 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
  E:/msys64/ucrt64/include/stdint.h \
  E:/dev/simulations/src/gravsim/2D_gravsim/window/gravsim_window.h \
  E:/dev/simulations/dependencies/glad/glad.h \
- E:/dev/simulations/dependencies/KHR/khrplatform.h
+ E:/dev/simulations/dependencies/KHR/khrplatform.h \
+ E:/msys64/ucrt64/include/c++/15.2.0/cstdio \
+ E:/msys64/ucrt64/include/stdio.h \
+ E:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ E:/msys64/ucrt64/include/_mingw_off_t.h \
+ E:/msys64/ucrt64/include/swprintf.inl \
+ E:/msys64/ucrt64/include/sec_api/stdio_s.h

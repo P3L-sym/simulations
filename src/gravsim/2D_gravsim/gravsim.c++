@@ -7,6 +7,7 @@
 #include <GLFW/glfw3.h>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 
 int main() {
     GLFWwindow* window = StartGLFW();
@@ -234,6 +235,28 @@ int main() {
         Body({ x_pluto, 0.0 }, { 0.0, v_pluto }, Pluto_Mass, 2.5f, 0.80f, 0.70f, 0.60f),                                              // 47 Pluto
         Body({ x_pluto + r_charon, 0.0 }, { 0.0, v_pluto + v_charon }, Charon_Mass, 2.0f, 0.65f, 0.63f, 0.60f),                       // 48 Charon
     };
+
+    constexpr double DAY = 86400.0;
+    constexpr double TAU = 6.283185307179586;
+    auto tidalLockPeriod = [](double r, double v) { return TAU * r / v; };
+
+    auto autoMoon = [&](int idx, double r, double v, bool retrograde = false, double tiltDeg = 1.0) {
+        double period = tidalLockPeriod(r, v);
+        if(retrograde) period = -period;
+        float pr = bodies[idx].r, pg = bodies[idx].g, pb = bodies[idx].b;
+        bodies[idx].configureRotation(
+            period, tiltDeg, PlanetType::IcyMoon,
+            pr * 0.55f, pg * 0.55f, pb * 0.55f,
+            std::min(1.0f, pr + 0.3f), std::min(1.0f, pg + 0.3f), std::min(1.0f, pb + 0.3f)
+        );
+    };
+
+    // Sun
+    bodies[0].configureRotation(25.05 * DAY, 7.25, PlanetType::Star, 1.00f, 0.55f, 0.05f, 1.00f, 1.00f, 0.85f);
+
+    // Mercury / Venus / Earth (+Moon) / Mars (+Phobos, Deimos)
+    bodies[1].configureRotation(58.646 * DAY, 0.03, PlanetType::Terrestrial, 0.35f, 0.32f, 0.30f,   0.75f, 0.72f, 0.68f);
+ 
 
     // ── GPU setup ────────────────────────────────────────────────────────────
     GravCompute gpu;
