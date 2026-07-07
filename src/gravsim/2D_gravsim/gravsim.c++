@@ -13,7 +13,7 @@ int main() {
     glfwMakeContextCurrent(window);
     glfwSwapInterval(0);
 
-    SetupOpenGL();  // GLAD is initialised inside here now
+    SetupOpenGL();  
 
     Camera camera;
     RegisterCameraCallbacks(window, camera);
