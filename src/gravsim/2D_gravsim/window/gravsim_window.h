@@ -2,8 +2,8 @@
 #include <glad/glad.h> 
 #include <GLFW/glfw3.h>
 
-inline constexpr int SCR_W = 800;
-inline constexpr int SCR_H = 600;
+inline constexpr int SCR_W = 1600;
+inline constexpr int SCR_H = 900;
 inline constexpr int trail_length = 3600;
 inline constexpr int sub_steps = 10;
 inline constexpr double G = 6.674e-11;

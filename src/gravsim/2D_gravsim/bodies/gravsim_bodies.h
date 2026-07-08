@@ -22,9 +22,16 @@ struct Camera;
 enum class PlanetType {
     Star = 0,
     Terrestrial = 1,
-    GasGiant =2,
+    GasGiant = 2,
     IceGiant = 3,
     IcyMoon = 4
+};
+
+enum class RingStyle {
+    None = 0,
+    Broad = 1,
+    Narrow = 2,
+    Faint = 3
 };
 
 struct Body {
@@ -42,13 +49,28 @@ struct Body {
     float c2r = -1, c2g = -1, c2b = -1;
     float c3r = -1, c3g = -1, c3b = -1;
 
+    bool hasRings = false;
+    float ringInner = 0.0f, ringOuter = 0.0f;
+    RingStyle ringStyle = RingStyle::None;
+    float ringR = 1.0f, ringG = 1.0f, ringB = 1.0f, ringAlpha = 0.5f;
+
     std::deque<Vec2> trail;
 
     Body(Vec2 pos, Vec2 vel, double mass,
          float drawRadius, float r, float g, float b);
 
-    void configureRotation (double periodSeconds, double tiltDeg, PlanetType t, float c2r_, float c2g_, float c2b_, float c3r_, float c3g_, float c3b_);
-    void updateRotation (double dtRealSeconds);
-    void draw (const Camera& cam) const;
+    void configureRotation(double periodSeconds, double tiltDeg, PlanetType t,
+                            float c2r_, float c2g_, float c2b_,
+                            float c3r_, float c3g_, float c3b_);
+
+    void configureRings(float innerMult, float outerMult, RingStyle style,
+                         float rr, float rg, float rb, float alpha);
+
+    void updateRotation(double dtRealSeconds);
+
+    void drawRingsBack(const Camera& cam) const;
+    void draw(const Camera& cam) const;
+    void drawRingsFront(const Camera& cam) const;
+
     void drawTrail(const Camera& cam) const;
 };

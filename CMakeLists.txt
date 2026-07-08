@@ -47,7 +47,7 @@ add_executable(grav_window
     src/gravsim/2D_gravsim/camera/gravsim_camera.c++
     src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++
     src/gravsim/2D_gravsim/physics/gravsim_physics.c++
-    src/gravsim/2D_gravsim/compute/gravsim_compute.c++   # ← new
+    src/gravsim/2D_gravsim/compute/gravsim_compute.c++  
     src/glad.c
 )
 
