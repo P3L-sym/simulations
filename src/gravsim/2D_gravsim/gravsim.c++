@@ -343,20 +343,20 @@ int main() {
 
             accumulator += elapsed;
 
+            bool stepped = false;
             while (accumulator >= fixed_real_dt) {
                 const double sub_dt = (fixed_real_dt * speed_multiplier) / sub_steps;
 
                 for (int s = 0; s < sub_steps; ++s)
                     gpu.integrateStep(sub_dt);
-
-                gpu.download(bodies);
-
-                for (auto& b : bodies) {
-                    b.trail.push_back(b.pos);
-                    if ((int)b.trail.size() > trail_length)
-                        b.trail.pop_front();
-                }
+                
                 accumulator -= fixed_real_dt;
+                stepped = true;
+            }
+
+            if(stepped) {
+                gpu.download(bodies);
+                for (auto& b : bodies) b.trail.push(b.pos);
             }
         }
 

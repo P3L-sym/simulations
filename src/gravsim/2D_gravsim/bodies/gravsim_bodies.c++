@@ -200,6 +200,52 @@ void main() {
 }
 )GLSL";
 
+// ── Trail shader sources ──────────────────────────────────────────────────────
+
+static const char* TRAIL_VS = R"GLSL(
+#version 430
+layout(location = 0) in dvec2 aWorldPos;
+
+uniform int uHead;
+uniform int uCount;
+uniform int uCapacity;
+uniform double uScale;
+uniform double uZoom;
+uniform double uOffsetX;
+uniform double uOffsetY;
+uniform float uScreenW;
+uniform float uScreenH;
+
+out float vAlpha;
+
+void main() {
+    double sx = aWorldPos.x * uScale * uZoom + double(uScreenW) * 0.5 + uOffsetX;
+    double sy = aWorldPos.y * uScale * uZoom + double(uScreenH) * 0.5 + uOffsetY;
+    float ndcX = float(sx / double(uScreenW)) * 2.0 - 1.0;
+    float ndcY = 1.0 - float(sy / double(uScreenH)) * 2.0;
+    gl_Position = vec4(ndcX, ndcY, 0.0, 1.0);
+
+    int slot = gl_VertexID;
+    int age = uHead - 1 - slot;
+    if (age < 0) age += uCapacity;
+
+    float denom = float(max(uCount - 1, 1));
+    float t = clamp(1.0 - float(age) / denom, 0.0, 1.0); // 0 = oldest, 1 = newest
+    vAlpha = t * t * 0.75;
+}
+)GLSL";
+
+static const char* TRAIL_FS = R"GLSL(
+#version 430
+in float vAlpha;
+out vec4 fragColor;
+uniform vec3 uColor;
+
+void main() {
+    fragColor = vec4(uColor, vAlpha);
+}
+)GLSL";
+
 // ── Lazy-initialised shared GL state ──────────────────────────────────────────
 
 namespace {
@@ -321,6 +367,33 @@ RingGL& ringGL() {
     return s;
 }
 
+struct TrailGL {
+    GLuint prog = 0;
+    GLint locHead, locCount, locCapacity;
+    GLint locScale, locZoom, locOffX, locOffY, locScreenW, locScreenH, locColor;
+    bool ready = false;
+};
+
+TrailGL& trailGL() {
+    static TrailGL s;
+    if (s.ready) return s;
+
+    s.prog = linkProgram(TRAIL_VS, TRAIL_FS);
+    s.locHead     = glGetUniformLocation(s.prog, "uHead");
+    s.locCount    = glGetUniformLocation(s.prog, "uCount");
+    s.locCapacity = glGetUniformLocation(s.prog, "uCapacity");
+    s.locScale    = glGetUniformLocation(s.prog, "uScale");
+    s.locZoom     = glGetUniformLocation(s.prog, "uZoom");
+    s.locOffX     = glGetUniformLocation(s.prog, "uOffsetX");
+    s.locOffY     = glGetUniformLocation(s.prog, "uOffsetY");
+    s.locScreenW  = glGetUniformLocation(s.prog, "uScreenW");
+    s.locScreenH  = glGetUniformLocation(s.prog, "uScreenH");
+    s.locColor    = glGetUniformLocation(s.prog, "uColor");
+
+    s.ready = true;
+    return s;
+}
+
 void drawRingPass(const Body& body, const Camera& cam, bool backPass) {
     if (!body.hasRings) return;
     RingGL& s = ringGL();
@@ -430,17 +503,82 @@ void Body::draw(const Camera& cam) const {
     glUseProgram(0); 
 }
 
-void Body::drawTrail(const Camera& cam) const {
-    if (trail.size() < 2) return;
+// ── Trail ─────────────────────────────────────────────────────────────────────
 
-    glBegin(GL_LINE_STRIP);
-    for (int i = 0; i < (int)trail.size(); ++i) {
-        float t = (float)i / (float)(trail.size() - 1);
-        float alpha = t * t;
-        glColor4f(r, g, b, alpha * 0.75f);
-        float sx = (float)(trail[i].x * scale * cam.zoom) + SCR_W * 0.5f + (float)cam.offsetX;
-        float sy = (float)(trail[i].y * scale * cam.zoom) + SCR_H * 0.5f + (float)cam.offsetY;
-        glVertex2f(sx, sy);
+Trail::Trail(const Trail& o)
+    : points(o.points), capacity(o.capacity), head(o.head), count(o.count) {}
+
+Trail& Trail::operator=(const Trail& o) {
+    if (this == &o) return *this;
+    points = o.points; capacity = o.capacity; head = o.head; count = o.count;
+    vao = 0; vbo = 0; glReady = false; 
+    return *this;
+}
+
+Trail::~Trail() {
+    if (vbo) glDeleteBuffers(1, &vbo);
+    if (vao) glDeleteVertexArrays(1, &vao);
+}
+
+void Trail::push(Vec2 p) {
+    if (capacity == 0) {
+        capacity = trail_length;
+        points.assign((size_t)capacity * 2, 0.0);
+
+        glGenVertexArrays(1, &vao);
+        glGenBuffers(1, &vbo);
+        glBindVertexArray(vao);
+        glBindBuffer(GL_ARRAY_BUFFER, vbo);
+        glBufferData(GL_ARRAY_BUFFER, (GLsizeiptr)(capacity * 2 * sizeof(double)),
+                     points.data(), GL_DYNAMIC_DRAW);
+        glVertexAttribLPointer(0, 2, GL_DOUBLE, 0, (void*)0);
+        glEnableVertexAttribArray(0);
+        glBindVertexArray(0);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glReady = true;
     }
-    glEnd();
+
+    points[(size_t)head * 2 + 0] = p.x;
+    points[(size_t)head * 2 + 1] = p.y;
+
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferSubData(GL_ARRAY_BUFFER, (GLintptr)(head * 2 * sizeof(double)),
+                     (GLsizeiptr)(2 * sizeof(double)), &points[(size_t)head * 2]);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    head = (head + 1) % capacity;
+    if (count < capacity) count++;
+}
+
+void Trail::draw(const Camera& cam, float r, float g, float b) const {
+    if (!glReady || count < 2) return;
+    TrailGL& s = trailGL();
+
+    glUseProgram(s.prog);
+    glUniform1i(s.locHead, head);
+    glUniform1i(s.locCount, count);
+    glUniform1i(s.locCapacity, capacity);
+    glUniform1d(s.locScale, scale);
+    glUniform1d(s.locZoom, cam.zoom);
+    glUniform1d(s.locOffX, cam.offsetX);
+    glUniform1d(s.locOffY, cam.offsetY);
+    glUniform1f(s.locScreenW, (float)SCR_W);
+    glUniform1f(s.locScreenH, (float)SCR_H);
+    glUniform3f(s.locColor, r, g, b);
+
+    glBindVertexArray(vao);
+    if (count < capacity) {
+        glDrawArrays(GL_LINE_STRIP, 0, count);
+    } else if (head == 0) {
+        glDrawArrays(GL_LINE_STRIP, 0, capacity);
+    } else {
+        glDrawArrays(GL_LINE_STRIP, head, capacity - head);
+        glDrawArrays(GL_LINE_STRIP, 0, head);
+    }
+    glBindVertexArray(0);
+    glUseProgram(0);
+}
+
+void Body::drawTrail(const Camera& cam) const {
+    trail.draw(cam, r, g, b);
 }

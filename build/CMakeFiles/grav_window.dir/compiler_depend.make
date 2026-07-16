@@ -313,10 +313,11 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
   E:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
+  E:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
+  E:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
@@ -330,17 +331,19 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
   E:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
+  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
+  E:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
   E:/msys64/ucrt64/include/c++/15.2.0/cmath \
   E:/msys64/ucrt64/include/c++/15.2.0/concepts \
@@ -348,7 +351,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
   E:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/deque \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
@@ -371,6 +373,7 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++.obj:
   E:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h \
   E:/msys64/ucrt64/include/c++/15.2.0/tuple \
   E:/msys64/ucrt64/include/c++/15.2.0/type_traits \
+  E:/msys64/ucrt64/include/c++/15.2.0/vector \
   E:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
   E:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
@@ -433,7 +436,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
@@ -454,7 +456,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
@@ -474,7 +475,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/compute/gravsim_compute.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/cstring \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/deque \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
@@ -543,7 +543,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: E:/dev/simula
   E:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
@@ -565,7 +564,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: E:/dev/simula
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
@@ -587,7 +585,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/gravsim.c++.obj: E:/dev/simula
   E:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/deque \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
@@ -656,7 +653,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
@@ -677,7 +673,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
@@ -695,7 +690,6 @@ CMakeFiles/grav_window.dir/src/gravsim/2D_gravsim/physics/gravsim_physics.c++.ob
   E:/msys64/ucrt64/include/c++/15.2.0/cstddef \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
   E:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
-  E:/msys64/ucrt64/include/c++/15.2.0/deque \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   E:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
@@ -1074,8 +1068,6 @@ E:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h:
 E:/msys64/ucrt64/include/driverspecs.h:
 
 E:/msys64/ucrt64/include/ddeml.h:
-
-E:/msys64/ucrt64/include/c++/15.2.0/deque:
 
 E:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectvlintrin.h:
 
@@ -1631,8 +1623,6 @@ E:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wbnoinvdintrin.h:
 
 E:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
 
-E:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h:
-
 E:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wmmintrin.h:
 
 E:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86gprintrin.h:
@@ -1669,11 +1659,9 @@ E:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h:
 
 E:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h:
 
-E:/msys64/ucrt64/include/c++/15.2.0/ostream:
-
-E:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc:
-
 E:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h:
+
+E:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h:
 
 E:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h:
 
@@ -1741,8 +1729,6 @@ E:/msys64/ucrt64/include/math.h:
 
 E:/dev/simulations/src/gravsim/2D_gravsim/bodies/gravsim_bodies.h:
 
-E:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h:
-
 E:/msys64/ucrt64/include/c++/15.2.0/cstring:
 
 E:/dev/simulations/src/gravsim/2D_gravsim/compute/gravsim_compute.h:
@@ -1792,6 +1778,8 @@ E:/msys64/ucrt64/include/c++/15.2.0/ios:
 E:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
 
 E:/msys64/ucrt64/include/c++/15.2.0/istream:
+
+E:/msys64/ucrt64/include/c++/15.2.0/ostream:
 
 E:/msys64/ucrt64/include/c++/15.2.0/string_view:
 

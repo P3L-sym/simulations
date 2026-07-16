@@ -1,5 +1,5 @@
 #pragma once
-#include <deque>
+#include <vector>
 #include <cmath>
 
 struct Vec2 {
@@ -34,6 +34,25 @@ enum class RingStyle {
     Faint = 3
 };
 
+struct Trail {
+    std::vector<double> points;
+    int capacity = 0;
+    int head = 0;
+    int count = 0;
+    unsigned int vao = 0;
+    unsigned int vbo = 0;
+    bool glReady = false;
+
+    Trail() = default;
+
+    Trail(const Trail& o);
+    Trail& operator=(const Trail& o);
+    ~Trail();
+
+    void push(Vec2 p);
+    void draw(const Camera& cam, float r, float g, float b) const;
+};
+
 struct Body {
     Vec2 pos;
     Vec2 vel;
@@ -54,7 +73,7 @@ struct Body {
     RingStyle ringStyle = RingStyle::None;
     float ringR = 1.0f, ringG = 1.0f, ringB = 1.0f, ringAlpha = 0.5f;
 
-    std::deque<Vec2> trail;
+    Trail trail;
 
     Body(Vec2 pos, Vec2 vel, double mass,
          float drawRadius, float r, float g, float b);

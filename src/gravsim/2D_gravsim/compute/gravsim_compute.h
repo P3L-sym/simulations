@@ -28,6 +28,9 @@ class GravCompute {
         GLuint m_kickVelPrg = 0;
         int m_n = 0;
 
+        GLint m_locPosN = -1, m_locPosDt = -1;
+        GLint m_locVelN = -1, m_locVelDt = -1, m_locVelG = -1, m_locVelSoft = -1;
+
     void kickPos(double c_dt);
     void kickVel(double d_dt);
 
