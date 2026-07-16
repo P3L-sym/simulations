@@ -12,7 +12,7 @@
 int main() {
     GLFWwindow* window = StartGLFW();
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(0);
+    glfwSwapInterval(1);
 
     SetupOpenGL();  
 

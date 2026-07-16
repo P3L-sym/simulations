@@ -15,11 +15,20 @@ GLFWwindow* StartGLFW() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
 
-    return glfwCreateWindow(SCR_W, SCR_H, "gravsim", nullptr, nullptr);
+    GLFWmonitor* monitor = glfwGetPrimaryMonitor();
+    const GLFWvidmode* mode = glfwGetVideoMode(monitor);
+
+    glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+    glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
+    glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
+    glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
+    glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+
+    return glfwCreateWindow(mode->width, mode->height, "gravsim", nullptr, nullptr);
 }
 
 void SetupOpenGL() {
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))  // ← replaces glewInit
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) 
         std::cerr << "Failed to initialise GLAD\n";
     
     glMatrixMode(GL_PROJECTION); glLoadIdentity();
@@ -32,10 +41,11 @@ void SetupOpenGL() {
 }
 
 void SetupWindowCallbacks(GLFWwindow* window) {
-    glfwSetKeyCallback(window, [](GLFWwindow*, int key, int, int action, int) {
+    glfwSetKeyCallback(window, [](GLFWwindow* win, int key, int, int action, int) {
         if (action != GLFW_PRESS) return;
 
-        if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) paused = !paused;
+        if (key == GLFW_KEY_SPACE) paused = !paused;
+        else if (key == GLFW_KEY_ESCAPE) glfwSetWindowShouldClose(win, GLFW_TRUE);
         else if (key == GLFW_KEY_1) focusIndex = 0;   // Sun
         else if (key == GLFW_KEY_2) focusIndex = 1;   // Mercury
         else if (key == GLFW_KEY_3) focusIndex = 2;   // Venus
