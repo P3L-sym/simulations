@@ -1,0 +1,1 @@
+-IC:/dev/simulation/dependencies -IC:/dev/glfw/include -IC:/dev/simulation -IC:/dev/simulation/src/gravsim/3D_gravsim

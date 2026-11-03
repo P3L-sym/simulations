@@ -40,18 +40,17 @@ find_package_handle_standard_args(GLFW3 DEFAULT_MSG GLFW3_LIBRARY GLFW3_INCLUDE_
 
 find_package(OpenGL REQUIRED)
 
-# ── Sources ───────────────────────────────────────────────────────────────────
+# ── 2D simulation ─────────────────────────────────────────────────────────────
 add_executable(grav_window
     src/gravsim/2D_gravsim/gravsim.c++
     src/gravsim/2D_gravsim/window/gravsim_window.c++
     src/gravsim/2D_gravsim/camera/gravsim_camera.c++
     src/gravsim/2D_gravsim/bodies/gravsim_bodies.c++
     src/gravsim/2D_gravsim/physics/gravsim_physics.c++
-    src/gravsim/2D_gravsim/compute/gravsim_compute.c++  
+    src/gravsim/2D_gravsim/compute/gravsim_compute.c++
     src/glad.c
 )
 
-# ── Includes ──────────────────────────────────────────────────────────────────
 target_include_directories(grav_window PRIVATE
     dependencies
     ${GLFW3_INCLUDE_DIR}
@@ -59,8 +58,33 @@ target_include_directories(grav_window PRIVATE
     src/gravsim/2D_gravsim
 )
 
-# ── Link ──────────────────────────────────────────────────────────────────────
 target_link_libraries(grav_window
+    ${GLFW3_LIBRARY}
+    OpenGL::GL
+    -lgdi32
+    -lopengl32
+    -ldwmapi
+)
+
+# ── 3D simulation ─────────────────────────────────────────────────────────────
+add_executable(grav_window_3d
+    src/gravsim/3D_gravsim/gravsim.c++
+    src/gravsim/3D_gravsim/window/gravsim_window.c++
+    src/gravsim/3D_gravsim/camera/gravsim_camera.c++
+    src/gravsim/3D_gravsim/bodies/gravsim_bodies.c++
+    src/gravsim/3D_gravsim/physics/gravsim_physics.c++
+    src/gravsim/3D_gravsim/compute/gravsim_compute.c++
+    src/glad.c
+)
+
+target_include_directories(grav_window_3d PRIVATE
+    dependencies
+    ${GLFW3_INCLUDE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    src/gravsim/3D_gravsim
+)
+
+target_link_libraries(grav_window_3d
     ${GLFW3_LIBRARY}
     OpenGL::GL
     -lgdi32
