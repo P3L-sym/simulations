@@ -20,7 +20,7 @@ Build realistic, physics-based space simulations in C++ while learning the langu
 - [X] Functions and basic OOP (classes & objects)
 - [X] Compiling and running my first program
 - [X] Running my first OpenGl program
-- [ ] Running my first 3D OpenGl program
+- [X] Running my first 3D OpenGl program
 
 ### Phase 2 — First Simulations
 - [X] Simulating 2D gravity
